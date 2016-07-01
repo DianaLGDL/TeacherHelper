@@ -1,31 +1,44 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{6893A78D-68CA-4F17-8C60-EF94E28F17D5}"
 	ProjectSection(SolutionItems) = preProject
 		dbTeacherHelperESC.sql = dbTeacherHelperESC.sql
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TeacherHelper", "TeacherHelper", "{0EA10570-B51A-4A1D-BC74-79CF31B3AFE6}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\App.config = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\App.config
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmConfiguracion.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmConfiguracion.cs
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmConfiguracion.Designer.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmConfiguracion.Designer.cs
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmHistorial.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmHistorial.cs
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmHistorial.Designer.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmHistorial.Designer.cs
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.cs
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.Designer.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.Designer.cs
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.resx = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.resx
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.cs
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.Designer.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.Designer.cs
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.resx = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.resx
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\Program.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\Program.cs
-		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\TeacherHelper.csproj = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\TeacherHelper.csproj
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{2D9A7BB8-AAEF-4896-A9ED-D8F46C489E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{888A0B58-B6F9-46C4-BCB7-046668A2602C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessLogic", "BussinessLogic\BussinessLogic.csproj", "{51B787E5-9A46-495F-9229-D212CA5AFE38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeacherHelperWindFormApp", "TeacherHelperWindFormApp\TeacherHelperWindFormApp.csproj", "{2B0B438C-7E77-4969-AEAC-C80AFA00864D}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D9A7BB8-AAEF-4896-A9ED-D8F46C489E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D9A7BB8-AAEF-4896-A9ED-D8F46C489E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D9A7BB8-AAEF-4896-A9ED-D8F46C489E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D9A7BB8-AAEF-4896-A9ED-D8F46C489E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{888A0B58-B6F9-46C4-BCB7-046668A2602C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888A0B58-B6F9-46C4-BCB7-046668A2602C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888A0B58-B6F9-46C4-BCB7-046668A2602C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888A0B58-B6F9-46C4-BCB7-046668A2602C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B787E5-9A46-495F-9229-D212CA5AFE38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B787E5-9A46-495F-9229-D212CA5AFE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B787E5-9A46-495F-9229-D212CA5AFE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B787E5-9A46-495F-9229-D212CA5AFE38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B0B438C-7E77-4969-AEAC-C80AFA00864D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B0B438C-7E77-4969-AEAC-C80AFA00864D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B0B438C-7E77-4969-AEAC-C80AFA00864D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B0B438C-7E77-4969-AEAC-C80AFA00864D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

@@ -8,6 +8,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{68
 		dbTeacherHelperESC.sql = dbTeacherHelperESC.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TeacherHelper", "TeacherHelper", "{0EA10570-B51A-4A1D-BC74-79CF31B3AFE6}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\App.config = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\App.config
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmConfiguracion.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmConfiguracion.cs
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmConfiguracion.Designer.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmConfiguracion.Designer.cs
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmHistorial.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmHistorial.cs
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmHistorial.Designer.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmHistorial.Designer.cs
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.cs
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.Designer.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.Designer.cs
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.resx = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmIniciarSesión.resx
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.cs
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.Designer.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.Designer.cs
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.resx = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\frmInicio.resx
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\Program.cs = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\Program.cs
+		..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\TeacherHelper.csproj = ..\..\..\..\Documents\Visual Studio 2015\Projects\301510258_DianaLauraGarcíaDeLeón\TeacherHelper\TeacherHelper.csproj
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,5 +4,7 @@ Version: 1.0
 Historia de la modificación:  IS               Fecha
                              DLGDL            14/06/16
 							 DLGDL            01/07/16
-							 CMHB             01/07/16*/
- 
+							 CMHB             01/07/16
+                             DLGDL            01/07/16
+							 /*
+							 

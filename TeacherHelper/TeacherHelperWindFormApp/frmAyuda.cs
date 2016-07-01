@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TeacherHelperWindFormApp
 {
-    public partial class Form1 : Form
+    public partial class frmAyuda : Form
     {
-        public Form1()
+        public frmAyuda()
         {
             InitializeComponent();
         }

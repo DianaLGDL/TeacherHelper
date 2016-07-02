@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TeacherHelperWindFormApp
+namespace TeacherHelperWinForm
 {
-    public partial class FrmInicio : Form
+    public partial class Form1 : Form
     {
-        public FrmInicio()
+        public Form1()
         {
             InitializeComponent();
         }

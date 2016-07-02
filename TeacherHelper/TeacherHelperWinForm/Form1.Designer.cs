@@ -1,6 +1,6 @@
-﻿namespace TeacherHelperWindFormApp
+﻿namespace TeacherHelperWinForm
 {
-    partial class FrmInicio
+    partial class Form1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // FrmInicio
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(577, 328);
-            this.Name = "FrmInicio";
             this.Text = "Form1";
-            this.ResumeLayout(false);
-
         }
 
         #endregion

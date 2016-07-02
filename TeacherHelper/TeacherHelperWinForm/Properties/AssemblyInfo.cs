@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("TeacherHelperWindFormApp")]
+[assembly: AssemblyTitle("TeacherHelperWinForm")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TeacherHelperWindFormApp")]
+[assembly: AssemblyProduct("TeacherHelperWinForm")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("2b0b438c-7e77-4969-aeac-c80afa00864d")]
+[assembly: Guid("9cbf797f-945c-45be-b3a8-9f2e101b58a6")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

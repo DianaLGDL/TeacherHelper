@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TeacherHelperWindFormApp.Properties
+namespace TeacherHelperWinForm.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace TeacherHelperWindFormApp.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeacherHelperWindFormApp.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeacherHelperWinForm.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

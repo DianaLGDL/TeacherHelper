@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{6893A78D-68CA-4F17-8C60-EF94E28F17D5}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,8 +13,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{888A0B58-B6F9-46C4-BCB7-046668A2602C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessLogic", "BussinessLogic\BussinessLogic.csproj", "{51B787E5-9A46-495F-9229-D212CA5AFE38}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeacherHelperWinForm", "TeacherHelperWinForm\TeacherHelperWinForm.csproj", "{9CBF797F-945C-45BE-B3A8-9F2E101B58A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +32,6 @@ Global
 		{51B787E5-9A46-495F-9229-D212CA5AFE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51B787E5-9A46-495F-9229-D212CA5AFE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51B787E5-9A46-495F-9229-D212CA5AFE38}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9CBF797F-945C-45BE-B3A8-9F2E101B58A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CBF797F-945C-45BE-B3A8-9F2E101B58A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9CBF797F-945C-45BE-B3A8-9F2E101B58A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9CBF797F-945C-45BE-B3A8-9F2E101B58A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

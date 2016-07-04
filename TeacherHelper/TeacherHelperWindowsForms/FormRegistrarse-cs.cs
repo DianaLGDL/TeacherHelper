@@ -16,5 +16,10 @@ namespace TeacherHelperWindowsForms
         {
             InitializeComponent();
         }
+
+        private void FormRegistrarse_cs_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

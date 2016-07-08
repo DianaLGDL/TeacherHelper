@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TeacherHelperWindowsForms
 {
-    public partial class FormInicio : Form
+    public partial class TeacherHelper : Form
     {
-        public FormInicio()
+        public TeacherHelper()
         {
             InitializeComponent();
         }

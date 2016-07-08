@@ -16,7 +16,7 @@ namespace TeacherHelperWindowsForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormRegistrarse_cs());
+            Application.Run(new TeacherHelper());
         }
     }
 }

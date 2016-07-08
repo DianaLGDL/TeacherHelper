@@ -1,6 +1,6 @@
 ﻿namespace TeacherHelperWindowsForms
 {
-    partial class FormInicio
+    partial class TeacherHelper
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // TeacherHelper
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "FormInicio";
+            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Name = "TeacherHelper";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Inicio";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

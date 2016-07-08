@@ -70,6 +70,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrarse-cs.resx">
       <DependentUpon>FormRegistrarse-cs.cs</DependentUpon>
     </EmbeddedResource>

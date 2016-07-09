@@ -1,6 +1,6 @@
 ﻿namespace TeacherHelperWindowsForms
 {
-    partial class TeacherHelper
+    partial class FormGrupos
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // TeacherHelper
+            // FormGrupos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1362, 741);
-            this.Name = "TeacherHelper";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Inicio";
+            this.ClientSize = new System.Drawing.Size(974, 541);
+            this.ControlBox = false;
+            this.Name = "FormGrupos";
+            this.Text = "Grupos";
             this.ResumeLayout(false);
 
         }

@@ -54,8 +54,10 @@
             // 
             // Gb_listalumn
             // 
+            this.Gb_listalumn.BackColor = System.Drawing.Color.Transparent;
             this.Gb_listalumn.Controls.Add(this.dataGridView1);
             this.Gb_listalumn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Gb_listalumn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Gb_listalumn.Location = new System.Drawing.Point(278, 12);
             this.Gb_listalumn.Name = "Gb_listalumn";
             this.Gb_listalumn.Size = new System.Drawing.Size(944, 597);
@@ -65,12 +67,14 @@
             // 
             // Gb_opciones
             // 
+            this.Gb_opciones.BackColor = System.Drawing.Color.Transparent;
             this.Gb_opciones.Controls.Add(this.Btn_Acept);
             this.Gb_opciones.Controls.Add(this.radioButton1);
             this.Gb_opciones.Controls.Add(this.Rb_eliminar);
             this.Gb_opciones.Controls.Add(this.Rb_modificar);
             this.Gb_opciones.Controls.Add(this.Rb_agregar);
             this.Gb_opciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Gb_opciones.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Gb_opciones.Location = new System.Drawing.Point(12, 12);
             this.Gb_opciones.Name = "Gb_opciones";
             this.Gb_opciones.Size = new System.Drawing.Size(260, 222);
@@ -132,15 +136,17 @@
             // 
             // Btn_Acept
             // 
+            this.Btn_Acept.BackColor = System.Drawing.SystemColors.Control;
             this.Btn_Acept.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_Acept.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_Acept.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Acept.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Btn_Acept.Location = new System.Drawing.Point(124, 36);
             this.Btn_Acept.Name = "Btn_Acept";
             this.Btn_Acept.Size = new System.Drawing.Size(130, 24);
             this.Btn_Acept.TabIndex = 4;
             this.Btn_Acept.Text = "Aceptar";
-            this.Btn_Acept.UseVisualStyleBackColor = true;
+            this.Btn_Acept.UseVisualStyleBackColor = false;
             // 
             // btn_return
             // 
@@ -170,6 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::TeacherHelperWindowsForms.Properties.Resources.mesh_1430108_960_720;
             this.ClientSize = new System.Drawing.Size(1234, 621);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_return);

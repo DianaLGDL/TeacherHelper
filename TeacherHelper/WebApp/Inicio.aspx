@@ -1,17 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="WebApp.Inicio" %>
+﻿<%@Page Title="TeacherHelper" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="WebApp.Inicio" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<form class="form-horizontal" role="form">
+
   <div class="form-group">
-    <label for="ejemplo_email_3" class="col-lg-2 control-label">Email</label>
+    <label for="lblEmail" class="col-lg-2 control-label">Email</label>
     <div class="col-lg-10">
-      <input type="email" class="form-control" id="ejemplo_email_3"
+      <input type="email" class="form-control" id="lblEmail"
              placeholder="Email">
     </div>
   </div>
   <div class="form-group">
-    <label for="ejemplo_password_3" class="col-lg-2 control-label">Contraseña</label>
+    <label for="lblPassword" class="col-lg-2 control-label">Contraseña</label>
     <div class="col-lg-10">
-      <input type="password" class="form-control" id="ejemplo_password_3" 
+      <input type="password" class="form-control" id="lblPassword" 
              placeholder="Contraseña">
     </div>
   </div>
@@ -25,9 +25,9 @@
     </div>
   </div>
   <div class="form-group">
-    <div class="col-lg-offset-2 col-lg-10">
       <button type="submit" class="btn btn-default">Entrar</button>
     </div>
-  </div>
-</form>
+    <div class="form-group">
+        <button type="submit" class="btn btn-default">Registrarse</button>
+    </div>
 </asp:Content>

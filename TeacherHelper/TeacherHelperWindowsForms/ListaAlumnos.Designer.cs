@@ -182,6 +182,7 @@
             this.Controls.Add(this.btn_return);
             this.Controls.Add(this.Gb_opciones);
             this.Controls.Add(this.Gb_listalumn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "ListaAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListaAlumnos";

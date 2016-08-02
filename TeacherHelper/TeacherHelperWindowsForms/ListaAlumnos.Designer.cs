@@ -31,13 +31,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Gb_listalumn = new System.Windows.Forms.GroupBox();
             this.Gb_opciones = new System.Windows.Forms.GroupBox();
-            this.Btn_Acept = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.Rb_eliminar = new System.Windows.Forms.RadioButton();
-            this.Rb_modificar = new System.Windows.Forms.RadioButton();
-            this.Rb_agregar = new System.Windows.Forms.RadioButton();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btn_return = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.Gb_listalumn.SuspendLayout();
             this.Gb_opciones.SuspendLayout();
@@ -68,11 +66,9 @@
             // Gb_opciones
             // 
             this.Gb_opciones.BackColor = System.Drawing.Color.Transparent;
-            this.Gb_opciones.Controls.Add(this.Btn_Acept);
-            this.Gb_opciones.Controls.Add(this.radioButton1);
-            this.Gb_opciones.Controls.Add(this.Rb_eliminar);
-            this.Gb_opciones.Controls.Add(this.Rb_modificar);
-            this.Gb_opciones.Controls.Add(this.Rb_agregar);
+            this.Gb_opciones.Controls.Add(this.btnEliminar);
+            this.Gb_opciones.Controls.Add(this.btnModificar);
+            this.Gb_opciones.Controls.Add(this.btnAgregar);
             this.Gb_opciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Gb_opciones.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Gb_opciones.Location = new System.Drawing.Point(12, 12);
@@ -82,71 +78,19 @@
             this.Gb_opciones.TabStop = false;
             this.Gb_opciones.Text = "Opciones";
             // 
-            // Btn_Acept
+            // btnAgregar
             // 
-            this.Btn_Acept.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Acept.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Acept.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Btn_Acept.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Acept.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Btn_Acept.Location = new System.Drawing.Point(124, 36);
-            this.Btn_Acept.Name = "Btn_Acept";
-            this.Btn_Acept.Size = new System.Drawing.Size(130, 24);
-            this.Btn_Acept.TabIndex = 4;
-            this.Btn_Acept.Text = "Aceptar";
-            this.Btn_Acept.UseVisualStyleBackColor = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(20, 175);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(76, 21);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Eliminar";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // Rb_eliminar
-            // 
-            this.Rb_eliminar.AutoSize = true;
-            this.Rb_eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Rb_eliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rb_eliminar.Location = new System.Drawing.Point(20, 128);
-            this.Rb_eliminar.Name = "Rb_eliminar";
-            this.Rb_eliminar.Size = new System.Drawing.Size(76, 21);
-            this.Rb_eliminar.TabIndex = 2;
-            this.Rb_eliminar.TabStop = true;
-            this.Rb_eliminar.Text = "Eliminar";
-            this.Rb_eliminar.UseVisualStyleBackColor = true;
-            // 
-            // Rb_modificar
-            // 
-            this.Rb_modificar.AutoSize = true;
-            this.Rb_modificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Rb_modificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rb_modificar.Location = new System.Drawing.Point(20, 83);
-            this.Rb_modificar.Name = "Rb_modificar";
-            this.Rb_modificar.Size = new System.Drawing.Size(86, 21);
-            this.Rb_modificar.TabIndex = 1;
-            this.Rb_modificar.TabStop = true;
-            this.Rb_modificar.Text = "Modificar";
-            this.Rb_modificar.UseVisualStyleBackColor = true;
-            // 
-            // Rb_agregar
-            // 
-            this.Rb_agregar.AutoSize = true;
-            this.Rb_agregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Rb_agregar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rb_agregar.Location = new System.Drawing.Point(20, 36);
-            this.Rb_agregar.Name = "Rb_agregar";
-            this.Rb_agregar.Size = new System.Drawing.Size(78, 21);
-            this.Rb_agregar.TabIndex = 0;
-            this.Rb_agregar.TabStop = true;
-            this.Rb_agregar.Text = "Agregar";
-            this.Rb_agregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAgregar.Location = new System.Drawing.Point(49, 50);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(130, 24);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
             // 
             // btn_return
             // 
@@ -172,6 +116,34 @@
             this.btn_exit.Text = "Salir";
             this.btn_exit.UseVisualStyleBackColor = true;
             // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnModificar.Location = new System.Drawing.Point(49, 107);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(130, 24);
+            this.btnModificar.TabIndex = 5;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEliminar.Location = new System.Drawing.Point(49, 159);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(130, 24);
+            this.btnEliminar.TabIndex = 6;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
             // ListaAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,7 +162,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.Gb_listalumn.ResumeLayout(false);
             this.Gb_opciones.ResumeLayout(false);
-            this.Gb_opciones.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -200,12 +171,10 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox Gb_listalumn;
         private System.Windows.Forms.GroupBox Gb_opciones;
-        private System.Windows.Forms.Button Btn_Acept;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton Rb_eliminar;
-        private System.Windows.Forms.RadioButton Rb_modificar;
-        private System.Windows.Forms.RadioButton Rb_agregar;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btn_return;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnModificar;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region librerias ("BNL")
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+#endregion
 
 namespace TeacherHelperWindowsForms
 {
@@ -16,5 +18,33 @@ namespace TeacherHelperWindowsForms
         {
             InitializeComponent();
         }
+
+        #region form ("BNL")
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
+        #region botones ("BNL")
+
+        private void btnRegistrarse_Click_1(object sender, EventArgs e)
+        {
+            FormRegistrarse_cs r = new FormRegistrarse_cs();
+            r.ShowDialog();
+        }
+
+        private void btnEntrar_Click_1(object sender, EventArgs e)
+        {
+            if (UsuarioDAL.Autentificar(txtUsuario.Text, txtContraseña.Text) > 0)
+            {
+                FormGrupos g = new FormGrupos();
+                g.ShowDialog();
+            }
+            else
+                MessageBox.Show("Error en los datos");
+        }
     }
-}
+    }
+
+#endregion

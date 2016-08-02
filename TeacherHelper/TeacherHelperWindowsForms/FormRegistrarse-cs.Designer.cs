@@ -41,6 +41,9 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +52,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(30, 92);
+            this.label1.Location = new System.Drawing.Point(30, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 21);
             this.label1.TabIndex = 0;
@@ -57,10 +60,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 92);
+            this.textBox1.Location = new System.Drawing.Point(148, 64);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(197, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -68,7 +72,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(30, 140);
+            this.label2.Location = new System.Drawing.Point(30, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 21);
             this.label2.TabIndex = 2;
@@ -76,10 +80,11 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 140);
+            this.textBox2.Location = new System.Drawing.Point(148, 112);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(197, 20);
             this.textBox2.TabIndex = 3;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
@@ -99,6 +104,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(288, 20);
             this.textBox3.TabIndex = 5;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4
             // 
@@ -118,6 +124,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(288, 20);
             this.textBox4.TabIndex = 7;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label5
             // 
@@ -139,6 +146,7 @@
             this.btncuenta.TabIndex = 9;
             this.btncuenta.Text = "Crear cuenta";
             this.btncuenta.UseVisualStyleBackColor = true;
+            this.btncuenta.Click += new System.EventHandler(this.btncuenta_Click);
             // 
             // checkBox1
             // 
@@ -152,6 +160,7 @@
             this.checkBox1.TabIndex = 10;
             this.checkBox1.Text = "Acepto los terminos y condiciones.";
             this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label7
             // 
@@ -171,6 +180,39 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(321, 20);
             this.textBox6.TabIndex = 14;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(30, 154);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 21);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Confirmar";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(148, 154);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(197, 20);
+            this.textBox5.TabIndex = 16;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Location = new System.Drawing.Point(186, 476);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(159, 32);
+            this.btnRegresar.TabIndex = 17;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // FormRegistrarse_cs
             // 
@@ -179,6 +221,9 @@
             this.BackColor = System.Drawing.Color.DarkRed;
             this.BackgroundImage = global::TeacherHelperWindowsForms.Properties.Resources.mesh_1430108_960_720;
             this.ClientSize = new System.Drawing.Size(584, 561);
+            this.Controls.Add(this.btnRegresar);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBox1);
@@ -216,5 +261,8 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

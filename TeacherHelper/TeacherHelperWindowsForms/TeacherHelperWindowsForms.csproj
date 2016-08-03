@@ -67,11 +67,17 @@
     <Compile Include="FormRegistrarse-cs.Designer.cs">
       <DependentUpon>FormRegistrarse-cs.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaAlumnos.cs">
+    <Compile Include="ListaAlumnos_SABIS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListaAlumnos.Designer.cs">
-      <DependentUpon>ListaAlumnos.cs</DependentUpon>
+    <Compile Include="ListaAlumnos_SABIS.Designer.cs">
+      <DependentUpon>ListaAlumnos_SABIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaAlumnos_SATRAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaAlumnos_SATRAD.Designer.cs">
+      <DependentUpon>ListaAlumnos_SATRAD.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,8 +91,11 @@
     <EmbeddedResource Include="FormRegistrarse-cs.resx">
       <DependentUpon>FormRegistrarse-cs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaAlumnos.resx">
-      <DependentUpon>ListaAlumnos.cs</DependentUpon>
+    <EmbeddedResource Include="ListaAlumnos_SABIS.resx">
+      <DependentUpon>ListaAlumnos_SABIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaAlumnos_SATRAD.resx">
+      <DependentUpon>ListaAlumnos_SATRAD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

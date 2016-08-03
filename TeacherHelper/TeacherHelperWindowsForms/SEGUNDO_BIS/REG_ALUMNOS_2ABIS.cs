@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TeacherHelperWindowsForms
 {
-    public partial class FormGrupos : Form
+    public partial class REG_ALUMNOS_2ABIS : Form
     {
-        public FormGrupos()
+        public REG_ALUMNOS_2ABIS()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

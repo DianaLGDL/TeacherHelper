@@ -55,47 +55,41 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGrupos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGrupos.Designer.cs">
-      <DependentUpon>FormGrupos.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormRegistrarse-cs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRegistrarse-cs.Designer.cs">
       <DependentUpon>FormRegistrarse-cs.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaAlumnos_SABIS.cs">
+    <Compile Include="GRUPOS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListaAlumnos_SABIS.Designer.cs">
-      <DependentUpon>ListaAlumnos_SABIS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ListaAlumnos_SATRAD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListaAlumnos_SATRAD.Designer.cs">
-      <DependentUpon>ListaAlumnos_SATRAD.cs</DependentUpon>
+    <Compile Include="GRUPOS.Designer.cs">
+      <DependentUpon>GRUPOS.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SEGUNDO_BIS\LIST_ALUMN_BIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEGUNDO_BIS\LIST_ALUMN_BIS.Designer.cs">
+      <DependentUpon>LIST_ALUMN_BIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SEGUNDO_BIS\REG_ALUMNOS_2ABIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEGUNDO_BIS\REG_ALUMNOS_2ABIS.Designer.cs">
+      <DependentUpon>REG_ALUMNOS_2ABIS.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioDAL.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGrupos.resx">
-      <DependentUpon>FormGrupos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrarse-cs.resx">
       <DependentUpon>FormRegistrarse-cs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaAlumnos_SABIS.resx">
-      <DependentUpon>ListaAlumnos_SABIS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListaAlumnos_SATRAD.resx">
-      <DependentUpon>ListaAlumnos_SATRAD.cs</DependentUpon>
+    <EmbeddedResource Include="GRUPOS.resx">
+      <DependentUpon>GRUPOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,6 +101,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SEGUNDO_BIS\LIST_ALUMN_BIS.resx">
+      <DependentUpon>LIST_ALUMN_BIS.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -128,6 +125,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mesh-1430108_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SEGUNDO_TRAD\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

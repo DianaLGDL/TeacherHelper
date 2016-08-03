@@ -20,7 +20,7 @@ namespace TeacherHelperWindowsForms
         }
 
         #region form ("BNL")
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load_1(object sender, EventArgs e)
         {
 
         }
@@ -38,12 +38,14 @@ namespace TeacherHelperWindowsForms
         {
             if (UsuarioDAL.Autentificar(txtUsuario.Text, txtContraseña.Text) > 0)
             {
-                FormGrupos g = new FormGrupos();
+                GRUPOS g = new GRUPOS();
                 g.ShowDialog();
             }
             else
                 MessageBox.Show("Error en los datos");
         }
+
+      
     }
     }
 

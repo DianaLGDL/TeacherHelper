@@ -7,13 +7,14 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 #endregion
 
 namespace TeacherHelperWindowsForms
 {
     class Conexion_Registro
     {
-        #region comandos sql
+        #region comandos sql ("BNL")
         SqlConnection cn;
         SqlCommand cmd;
         SqlDataReader dr;
@@ -21,6 +22,41 @@ namespace TeacherHelperWindowsForms
         DataTable dt;
         #endregion
 
+        #region conexion sql ("BNL")
+        public Conexion_Registro()
+        {
+            try
+            {
+                cn = new SqlConnection("Data Source=.;Initial Catalog=EXAMEN2;Integrated Security=True");
+                cn.Open();
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("no se conecto");
+            }
+        }
+        #endregion
+
+        #region cargar LISTA SEGUNDO BIS ("BNL")
+        //checar codigo
+        public void LISTA_SEGUNDO_BIS(DataGridView dataGridView1)
+        {
+            try
+            {
+                da = new SqlDataAdapter("Select * from Segundo_A", cn);
+                dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo mostrar la lista de las citas");
+            }
+        }
+        #endregion
+
+        /*
         #region registro
         public string registro(int NUM_LISTA, int MATRICULA, string NOMBRE, int CALIFICACIONES, int PROMEDIO, string CORREO, string NOTAS)
         {
@@ -41,5 +77,6 @@ namespace TeacherHelperWindowsForms
             return salida;
         }
         #endregion
+    */
     }
 }

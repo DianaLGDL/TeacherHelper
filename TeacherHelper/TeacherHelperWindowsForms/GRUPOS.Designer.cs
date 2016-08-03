@@ -1,6 +1,6 @@
 ﻿namespace TeacherHelperWindowsForms
 {
-    partial class FormGrupos
+    partial class GRUPOS
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btn_salir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Rb_5bis = new System.Windows.Forms.RadioButton();
             this.Rb_3B = new System.Windows.Forms.RadioButton();
@@ -35,10 +37,33 @@
             this.Rb_2Bis = new System.Windows.Forms.RadioButton();
             this.Rb_2A = new System.Windows.Forms.RadioButton();
             this.Rb_1A = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn_salir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btn_salir
+            // 
+            this.btn_salir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_salir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salir.Location = new System.Drawing.Point(487, 117);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(159, 32);
+            this.btn_salir.TabIndex = 5;
+            this.btn_salir.Text = "Salir";
+            this.btn_salir.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(487, 64);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 32);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Entrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -53,13 +78,12 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Location = new System.Drawing.Point(12, 20);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(459, 238);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleccione el grupo al que desea ingresar";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Rb_5bis
             // 
@@ -116,6 +140,7 @@
             this.Rb_2Bis.TabStop = true;
             this.Rb_2Bis.Text = "Grupo Segundo \"BIS\"";
             this.Rb_2Bis.UseVisualStyleBackColor = true;
+            this.Rb_2Bis.CheckedChanged += new System.EventHandler(this.Rb_2Bis_CheckedChanged);
             // 
             // Rb_2A
             // 
@@ -145,31 +170,7 @@
             this.Rb_1A.Text = "Grupo Primero \"A\"";
             this.Rb_1A.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(488, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 32);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btn_salir
-            // 
-            this.btn_salir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_salir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(488, 110);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(159, 32);
-            this.btn_salir.TabIndex = 2;
-            this.btn_salir.Text = "Salir";
-            this.btn_salir.UseVisualStyleBackColor = true;
-            // 
-            // FormGrupos
+            // GRUPOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,9 +179,9 @@
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "FormGrupos";
-            this.Text = "Grupos";
+            this.Name = "GRUPOS";
+            this.Text = "GRUPOS";
+            this.Load += new System.EventHandler(this.GRUPOS_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -189,6 +190,8 @@
 
         #endregion
 
+        private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton Rb_5bis;
         private System.Windows.Forms.RadioButton Rb_3B;
@@ -196,7 +199,5 @@
         private System.Windows.Forms.RadioButton Rb_2Bis;
         private System.Windows.Forms.RadioButton Rb_2A;
         private System.Windows.Forms.RadioButton Rb_1A;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btn_salir;
     }
 }

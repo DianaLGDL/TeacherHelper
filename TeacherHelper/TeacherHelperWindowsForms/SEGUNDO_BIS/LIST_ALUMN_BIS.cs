@@ -1,5 +1,4 @@
-﻿#region librerias ("BNL")
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,31 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-#endregion
 
-namespace TeacherHelperWindowsForms
+namespace TeacherHelperWindowsForms.SEGUNDO_BIS
 {
-    public partial class ListaAlumnos : Form
+    public partial class LIST_ALUMN_BIS : Form
     {
-        public ListaAlumnos()
+        Conexion_Registro c = new Conexion_Registro();
+        public LIST_ALUMN_BIS()
         {
             InitializeComponent();
         }
 
-        #region ventana ("BNL")
-        private void ListaAlumnos_Load(object sender, EventArgs e)
+        private void LIST_ALUMN_BIS_Load(object sender, EventArgs e)
         {
-
+            c.LISTA_SEGUNDO_BIS(dataGridView1);
         }
-        #endregion
 
-        #region GridView SABIS ("BNL")
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        
 
         }
-        #endregion
-
-
     }
 }

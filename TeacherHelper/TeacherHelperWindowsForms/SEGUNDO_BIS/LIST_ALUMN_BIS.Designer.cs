@@ -36,6 +36,7 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.Gb_listalumn = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnLista = new System.Windows.Forms.Button();
             this.Gb_opciones.SuspendLayout();
             this.Gb_listalumn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -68,6 +69,7 @@
             // Gb_opciones
             // 
             this.Gb_opciones.BackColor = System.Drawing.Color.Transparent;
+            this.Gb_opciones.Controls.Add(this.btnLista);
             this.Gb_opciones.Controls.Add(this.btnEliminar);
             this.Gb_opciones.Controls.Add(this.btnModificar);
             this.Gb_opciones.Controls.Add(this.btnAgregar);
@@ -87,7 +89,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEliminar.Location = new System.Drawing.Point(49, 159);
+            this.btnEliminar.Location = new System.Drawing.Point(49, 122);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(130, 24);
             this.btnEliminar.TabIndex = 6;
@@ -101,7 +103,7 @@
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnModificar.Location = new System.Drawing.Point(49, 105);
+            this.btnModificar.Location = new System.Drawing.Point(49, 80);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(130, 24);
             this.btnModificar.TabIndex = 5;
@@ -115,7 +117,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAgregar.Location = new System.Drawing.Point(49, 50);
+            this.btnAgregar.Location = new System.Drawing.Point(49, 36);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(130, 24);
             this.btnAgregar.TabIndex = 4;
@@ -143,6 +145,21 @@
             this.dataGridView1.Size = new System.Drawing.Size(906, 543);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // btnLista
+            // 
+            this.btnLista.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLista.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLista.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLista.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLista.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnLista.Location = new System.Drawing.Point(49, 164);
+            this.btnLista.Name = "btnLista";
+            this.btnLista.Size = new System.Drawing.Size(130, 24);
+            this.btnLista.TabIndex = 7;
+            this.btnLista.Text = "Mostrar lista\r\n";
+            this.btnLista.UseVisualStyleBackColor = false;
+            this.btnLista.Click += new System.EventHandler(this.btnLista_Click);
             // 
             // LIST_ALUMN_BIS
             // 
@@ -174,5 +191,6 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.GroupBox Gb_listalumn;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnLista;
     }
 }

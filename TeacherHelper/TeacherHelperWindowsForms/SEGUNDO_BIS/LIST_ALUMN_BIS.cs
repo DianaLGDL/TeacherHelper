@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region Librerias ("BNL")
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+#endregion
 
 namespace TeacherHelperWindowsForms.SEGUNDO_BIS
 {
@@ -18,15 +20,25 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
             InitializeComponent();
         }
 
+        #region Ventana ("BNL")
         private void LIST_ALUMN_BIS_Load(object sender, EventArgs e)
         {
             c.LISTA_SEGUNDO_BIS(dataGridView1);
         }
+        #endregion
 
+        #region GridView ("BNL")
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-        
 
         }
+        #endregion
+
+        #region BOTONES ("BNL")
+        private void btnLista_Click(object sender, EventArgs e)
+        {
+            
+        }
+        #endregion
     }
 }

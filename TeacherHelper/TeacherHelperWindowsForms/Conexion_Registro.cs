@@ -40,14 +40,14 @@ namespace TeacherHelperWindowsForms
 
         #region cargar LISTA SEGUNDO BIS ("BNL")
         //checar codigo
-        public void LISTA_SEGUNDO_BIS(DataGridView dataGridView1)
+        public void LISTA_SEGUNDO_BIS(DataGridView dgv)
         {
             try
             {
                 da = new SqlDataAdapter("Select * from Segundo_A", cn);
                 dt = new DataTable();
                 da.Fill(dt);
-                dataGridView1.DataSource = dt;
+                dgv.DataSource = dt;
             }
             catch (Exception ex)
             {

@@ -55,8 +55,7 @@ namespace TeacherHelperWindowsForms
         }
         #endregion
 
-        /*
-        #region registro
+        #region registro ("BNL")
         public string registro(int NUM_LISTA, int MATRICULA, string NOMBRE, int CALIFICACIONES, int PROMEDIO, string CORREO, string NOTAS)
         {
             string salida = "Registro correcto";
@@ -65,7 +64,7 @@ namespace TeacherHelperWindowsForms
                 cmd
                 =
                 new
-                SqlCommand("Insert into Segundo_A(NUM_LISTA) values (" + RFC + ",'" + NOMBRE + "','" + SEXO + "'," + EDAD + ",'" + CALLE + "','" + COLONIA + "'," + CODIGO_POSTAL + ",'" + MUNICIPIO + "','" + ESTADO + "','" + PAIS + "'," + TEL + "," + TEL_TRABAJO + "," + FAX + "," + CEL + ")", cn);
+                SqlCommand("Insert into Segundo_A(NUM_LISTA,MATRICULA,NOMBRE,CAL1,CAL2,CAL3,CAL4,CAL5,CAL6,PROMEDIO,CORREO,NOTAS) values (" +NUM_LISTA+ "," +MATRICULA+ ",'" +NOMBRE+ "'," +CALIFICACIONES+ "," +PROMEDIO+ ",'" + CORREO + "','" + NOTAS + "',)", cn);
                 cmd.ExecuteNonQuery();
 
             }
@@ -76,6 +75,27 @@ namespace TeacherHelperWindowsForms
             return salida;
         }
         #endregion
-    */
+
+        #region registro existente ("BNL")
+        public int registroExistente(int MATRICULA)
+        {
+            int contador = 0;
+            try
+            {
+                cmd = new SqlCommand("Select * from Segundo_A where MATRICULA =" + MATRICULA + "", cn);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    contador++;
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ya existe Alumno");
+            }
+            return contador;
+        }
+        #endregion
     }
 }

@@ -27,7 +27,7 @@ namespace TeacherHelperWindowsForms
         {
             try
             {
-                cn = new SqlConnection("Data Source=.;Initial Catalog=EXAMEN2;Integrated Security=True");
+                cn = new SqlConnection("Data Source=.;Initial Catalog=PROGRAMA_1; Integrated Security=True");
                 cn.Open();
                 
             }
@@ -39,7 +39,6 @@ namespace TeacherHelperWindowsForms
         #endregion
 
         #region cargar LISTA SEGUNDO BIS ("BNL")
-        //checar codigo
         public void LISTA_SEGUNDO_BIS(DataGridView dgv)
         {
             try
@@ -51,7 +50,7 @@ namespace TeacherHelperWindowsForms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No se pudo mostrar la lista de las citas");
+                MessageBox.Show("No se pudo mostrar la lista de los Alumnos");
             }
         }
         #endregion

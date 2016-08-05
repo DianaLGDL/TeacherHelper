@@ -23,6 +23,8 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
         #region Ventana ("BNL")
         private void LIST_ALUMN_BIS_Load(object sender, EventArgs e)
         {
+            Conexion_Registro c = new Conexion_Registro();
+           
             c.LISTA_SEGUNDO_BIS(dataGridView1);
         }
         #endregion

@@ -104,6 +104,9 @@
     <EmbeddedResource Include="SEGUNDO_BIS\LIST_ALUMN_BIS.resx">
       <DependentUpon>LIST_ALUMN_BIS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SEGUNDO_BIS\REG_ALUMNOS_2ABIS.resx">
+      <DependentUpon>REG_ALUMNOS_2ABIS.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -126,9 +129,7 @@
   <ItemGroup>
     <None Include="Resources\mesh-1430108_960_720.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SEGUNDO_TRAD\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

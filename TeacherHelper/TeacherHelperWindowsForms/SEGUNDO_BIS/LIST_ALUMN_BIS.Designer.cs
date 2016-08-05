@@ -31,12 +31,12 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.btn_return = new System.Windows.Forms.Button();
             this.Gb_opciones = new System.Windows.Forms.GroupBox();
+            this.btnLista = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.Gb_listalumn = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnLista = new System.Windows.Forms.Button();
             this.Gb_opciones.SuspendLayout();
             this.Gb_listalumn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -81,6 +81,21 @@
             this.Gb_opciones.TabIndex = 6;
             this.Gb_opciones.TabStop = false;
             this.Gb_opciones.Text = "Opciones";
+            // 
+            // btnLista
+            // 
+            this.btnLista.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLista.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLista.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLista.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLista.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnLista.Location = new System.Drawing.Point(49, 164);
+            this.btnLista.Name = "btnLista";
+            this.btnLista.Size = new System.Drawing.Size(130, 24);
+            this.btnLista.TabIndex = 7;
+            this.btnLista.Text = "Mostrar lista\r\n";
+            this.btnLista.UseVisualStyleBackColor = false;
+            this.btnLista.Click += new System.EventHandler(this.btnLista_Click);
             // 
             // btnEliminar
             // 
@@ -132,46 +147,34 @@
             this.Gb_listalumn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Gb_listalumn.Location = new System.Drawing.Point(278, 12);
             this.Gb_listalumn.Name = "Gb_listalumn";
-            this.Gb_listalumn.Size = new System.Drawing.Size(944, 597);
+            this.Gb_listalumn.Size = new System.Drawing.Size(1035, 597);
             this.Gb_listalumn.TabIndex = 5;
             this.Gb_listalumn.TabStop = false;
             this.Gb_listalumn.Text = "Lista de los alumnos";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.DodgerBlue;
             this.dataGridView1.Location = new System.Drawing.Point(21, 36);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(906, 543);
+            this.dataGridView1.Size = new System.Drawing.Size(989, 543);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // btnLista
-            // 
-            this.btnLista.BackColor = System.Drawing.SystemColors.Control;
-            this.btnLista.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLista.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLista.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLista.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLista.Location = new System.Drawing.Point(49, 164);
-            this.btnLista.Name = "btnLista";
-            this.btnLista.Size = new System.Drawing.Size(130, 24);
-            this.btnLista.TabIndex = 7;
-            this.btnLista.Text = "Mostrar lista\r\n";
-            this.btnLista.UseVisualStyleBackColor = false;
-            this.btnLista.Click += new System.EventHandler(this.btnLista_Click);
             // 
             // LIST_ALUMN_BIS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TeacherHelperWindowsForms.Properties.Resources.mesh_1430108_960_720;
-            this.ClientSize = new System.Drawing.Size(1234, 621);
+            this.ClientSize = new System.Drawing.Size(1348, 687);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_return);
             this.Controls.Add(this.Gb_opciones);
             this.Controls.Add(this.Gb_listalumn);
             this.Name = "LIST_ALUMN_BIS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LIST_ALUMN_BIS";
             this.Load += new System.EventHandler(this.LIST_ALUMN_BIS_Load);
             this.Gb_opciones.ResumeLayout(false);

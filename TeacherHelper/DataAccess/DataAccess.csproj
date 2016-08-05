@@ -67,7 +67,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Login.edmx</DependentUpon>
     </Compile>
+    <Compile Include="PROGRAMA_1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROGRAMA_1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PROGRAMA_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROGRAMA_1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PROGRAMA_1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROGRAMA_1.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Segundo_A.cs">
+      <DependentUpon>PROGRAMA_1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Segundo_A_trad.cs">
+      <DependentUpon>PROGRAMA_1.tt</DependentUpon>
+    </Compile>
     <Compile Include="TEACHER.cs">
       <DependentUpon>Login.tt</DependentUpon>
     </Compile>
@@ -90,6 +111,13 @@
       <DependentUpon>Login.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <EntityDeploy Include="PROGRAMA_1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PROGRAMA_1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PROGRAMA_1.edmx.diagram">
+      <DependentUpon>PROGRAMA_1.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Login.Context.tt">
@@ -101,6 +129,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Login.edmx</DependentUpon>
       <LastGenOutput>Login.cs</LastGenOutput>
+    </Content>
+    <Content Include="PROGRAMA_1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PROGRAMA_1.edmx</DependentUpon>
+      <LastGenOutput>PROGRAMA_1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PROGRAMA_1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PROGRAMA_1.edmx</DependentUpon>
+      <LastGenOutput>PROGRAMA_1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

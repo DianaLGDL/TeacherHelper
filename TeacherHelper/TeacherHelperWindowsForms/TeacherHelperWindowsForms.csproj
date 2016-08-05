@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="BDComun.cs" />
     <Compile Include="Conexion_Registro.cs" />
-    <Compile Include="Datos.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

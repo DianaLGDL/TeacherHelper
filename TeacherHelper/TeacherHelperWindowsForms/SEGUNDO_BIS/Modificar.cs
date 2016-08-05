@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TeacherHelperWindowsForms
+namespace TeacherHelperWindowsForms.MODIFICAR
 {
-    public partial class REG_ALUMNOS_2ABIS : Form
+    public partial class Modificar : Form
     {
-        public REG_ALUMNOS_2ABIS()
+        public Modificar()
         {
             InitializeComponent();
         }

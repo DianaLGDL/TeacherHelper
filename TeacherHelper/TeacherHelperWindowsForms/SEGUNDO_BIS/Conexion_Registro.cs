@@ -43,7 +43,7 @@ namespace TeacherHelperWindowsForms
         {
             try
             {
-                da = new SqlDataAdapter("Select * from Segundo_A", cn);
+                da = new SqlDataAdapter("Select*from Segundo_A order by NUM_LISTA ASC", cn);
                 dt = new DataTable();
                 da.Fill(dt);
                 dgv.DataSource = dt;

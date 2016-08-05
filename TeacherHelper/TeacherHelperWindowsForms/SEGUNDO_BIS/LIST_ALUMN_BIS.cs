@@ -24,8 +24,8 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
         private void LIST_ALUMN_BIS_Load(object sender, EventArgs e)
         {
             Conexion_Registro c = new Conexion_Registro();
-           
             c.LISTA_SEGUNDO_BIS(dataGridView1);
+
         }
         #endregion
 
@@ -39,7 +39,7 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
         #region BOTONES ("BNL")
         private void btnLista_Click(object sender, EventArgs e)
         {
-            
+            c.LISTA_SEGUNDO_BIS(dataGridView1);
         }
         #endregion
     }

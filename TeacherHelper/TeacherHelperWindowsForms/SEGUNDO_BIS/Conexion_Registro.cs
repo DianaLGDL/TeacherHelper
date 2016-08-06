@@ -97,5 +97,39 @@ namespace TeacherHelperWindowsForms
             return contador;
         }
         #endregion
+
+        #region mostrar registro ("BNL")
+        public void Mostrar(int MATRICULA, ComboBox cbxNumList, TextBox txtNombre, ComboBox cbCal1, ComboBox cbCal2, ComboBox cbCal3, ComboBox cbCal4, ComboBox cbCal5, ComboBox cbCal6, ComboBox cbPromedio, TextBox txtCorreo, TextBox txtNotas)
+        {
+            try
+            {
+                cmd = new SqlCommand("Select * from Segundo_A where MATRICULA="+MATRICULA+"",cn);
+                dr = cmd.ExecuteReader();
+                if( dr.Read())
+                {
+                    Convert.ToInt32(cbxNumList.Text = dr["NUM_LISTA"].ToString());
+                    txtNombre.Text = dr["NOMBRE"].ToString();
+                    Convert.ToInt32(cbCal1.Text = dr["CAL1"].ToString());
+                    Convert.ToInt32(cbCal2.Text = dr["CAL2"].ToString());
+                    Convert.ToInt32(cbCal3.Text = dr["CAL3"].ToString());
+                    Convert.ToInt32(cbCal4.Text = dr["CAL4"].ToString());
+                    Convert.ToInt32(cbCal5.Text = dr["CAL5"].ToString());
+                    Convert.ToInt32(cbCal6.Text = dr["CAL6"].ToString());
+                    Convert.ToInt32(cbPromedio.Text = dr["PROMEDIO"].ToString());
+                    txtCorreo.Text = dr["CORREO"].ToString();
+                    txtNotas.Text = dr["NOTAS"].ToString();
+                }
+                dr.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("No se pudieron llenar los campos");
+            }
+        }
+        #endregion
+
+        #region ACTUALIZAR
+        #endregion
+
     }
 }

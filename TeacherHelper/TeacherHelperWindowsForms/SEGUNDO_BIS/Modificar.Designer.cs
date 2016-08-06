@@ -1,6 +1,6 @@
 ﻿namespace TeacherHelperWindowsForms.SEGUNDO_BIS
 {
-    partial class Agregar
+    partial class Modificar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agregar));
+            this.gbOpciones = new System.Windows.Forms.GroupBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.gbAgregar = new System.Windows.Forms.GroupBox();
             this.cbxNumList = new System.Windows.Forms.ComboBox();
             this.cbPromedio = new System.Windows.Forms.ComboBox();
@@ -41,7 +43,6 @@
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtNotas = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtMatricula = new System.Windows.Forms.TextBox();
             this.lblCal3 = new System.Windows.Forms.Label();
             this.lblCal2 = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -51,15 +52,53 @@
             this.lblPromedio = new System.Windows.Forms.Label();
             this.lblCorreo = new System.Windows.Forms.Label();
             this.lblCal1 = new System.Windows.Forms.Label();
-            this.lblMatricula = new System.Windows.Forms.Label();
             this.lblNotas = new System.Windows.Forms.Label();
             this.lblNumLista = new System.Windows.Forms.Label();
-            this.gbOpciones = new System.Windows.Forms.GroupBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.gbAgregar.SuspendLayout();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.lblMatricula = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gbOpciones.SuspendLayout();
+            this.gbAgregar.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // gbOpciones
+            // 
+            this.gbOpciones.BackColor = System.Drawing.Color.Transparent;
+            this.gbOpciones.Controls.Add(this.btnCancelar);
+            this.gbOpciones.Controls.Add(this.btnModificar);
+            this.gbOpciones.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbOpciones.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.gbOpciones.Location = new System.Drawing.Point(12, 12);
+            this.gbOpciones.Name = "gbOpciones";
+            this.gbOpciones.Size = new System.Drawing.Size(147, 149);
+            this.gbOpciones.TabIndex = 3;
+            this.gbOpciones.TabStop = false;
+            this.gbOpciones.Text = "Opciones";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCancelar.Location = new System.Drawing.Point(22, 79);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(99, 33);
+            this.btnCancelar.TabIndex = 1;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnModificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnModificar.Location = new System.Drawing.Point(22, 34);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(99, 32);
+            this.btnModificar.TabIndex = 0;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // gbAgregar
             // 
@@ -75,7 +114,6 @@
             this.gbAgregar.Controls.Add(this.txtCorreo);
             this.gbAgregar.Controls.Add(this.txtNotas);
             this.gbAgregar.Controls.Add(this.txtNombre);
-            this.gbAgregar.Controls.Add(this.txtMatricula);
             this.gbAgregar.Controls.Add(this.lblCal3);
             this.gbAgregar.Controls.Add(this.lblCal2);
             this.gbAgregar.Controls.Add(this.lblNombre);
@@ -85,18 +123,16 @@
             this.gbAgregar.Controls.Add(this.lblPromedio);
             this.gbAgregar.Controls.Add(this.lblCorreo);
             this.gbAgregar.Controls.Add(this.lblCal1);
-            this.gbAgregar.Controls.Add(this.lblMatricula);
             this.gbAgregar.Controls.Add(this.lblNotas);
             this.gbAgregar.Controls.Add(this.lblNumLista);
             this.gbAgregar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbAgregar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gbAgregar.Location = new System.Drawing.Point(178, 13);
+            this.gbAgregar.Location = new System.Drawing.Point(177, 12);
             this.gbAgregar.Name = "gbAgregar";
             this.gbAgregar.Size = new System.Drawing.Size(524, 518);
-            this.gbAgregar.TabIndex = 0;
+            this.gbAgregar.TabIndex = 2;
             this.gbAgregar.TabStop = false;
-            this.gbAgregar.Text = "Agregar Alumno";
-            this.gbAgregar.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.gbAgregar.Text = "Modificar Alumno";
             // 
             // cbxNumList
             // 
@@ -285,7 +321,7 @@
             "8",
             "9",
             "10"});
-            this.cbCal2.Location = new System.Drawing.Point(25, 236);
+            this.cbCal2.Location = new System.Drawing.Point(25, 216);
             this.cbCal2.Name = "cbCal2";
             this.cbCal2.Size = new System.Drawing.Size(121, 25);
             this.cbCal2.TabIndex = 18;
@@ -304,7 +340,7 @@
             "8",
             "9",
             "10"});
-            this.cbCal1.Location = new System.Drawing.Point(27, 189);
+            this.cbCal1.Location = new System.Drawing.Point(25, 152);
             this.cbCal1.Name = "cbCal1";
             this.cbCal1.Size = new System.Drawing.Size(121, 25);
             this.cbCal1.TabIndex = 17;
@@ -329,23 +365,15 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(25, 146);
+            this.txtNombre.Location = new System.Drawing.Point(25, 105);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(202, 22);
             this.txtNombre.TabIndex = 14;
             // 
-            // txtMatricula
-            // 
-            this.txtMatricula.Location = new System.Drawing.Point(25, 100);
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(123, 22);
-            this.txtMatricula.TabIndex = 13;
-            this.txtMatricula.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
             // lblCal3
             // 
             this.lblCal3.AutoSize = true;
-            this.lblCal3.Location = new System.Drawing.Point(22, 265);
+            this.lblCal3.Location = new System.Drawing.Point(22, 261);
             this.lblCal3.Name = "lblCal3";
             this.lblCal3.Size = new System.Drawing.Size(90, 17);
             this.lblCal3.TabIndex = 11;
@@ -354,7 +382,7 @@
             // lblCal2
             // 
             this.lblCal2.AutoSize = true;
-            this.lblCal2.Location = new System.Drawing.Point(29, 216);
+            this.lblCal2.Location = new System.Drawing.Point(24, 196);
             this.lblCal2.Name = "lblCal2";
             this.lblCal2.Size = new System.Drawing.Size(90, 17);
             this.lblCal2.TabIndex = 10;
@@ -363,7 +391,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(22, 123);
+            this.lblNombre.Location = new System.Drawing.Point(22, 83);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(56, 17);
             this.lblNombre.TabIndex = 9;
@@ -417,20 +445,11 @@
             // lblCal1
             // 
             this.lblCal1.AutoSize = true;
-            this.lblCal1.Location = new System.Drawing.Point(24, 170);
+            this.lblCal1.Location = new System.Drawing.Point(22, 132);
             this.lblCal1.Name = "lblCal1";
             this.lblCal1.Size = new System.Drawing.Size(90, 17);
             this.lblCal1.TabIndex = 3;
             this.lblCal1.Text = "Calificacion 1";
-            // 
-            // lblMatricula
-            // 
-            this.lblMatricula.AutoSize = true;
-            this.lblMatricula.Location = new System.Drawing.Point(22, 79);
-            this.lblMatricula.Name = "lblMatricula";
-            this.lblMatricula.Size = new System.Drawing.Size(65, 17);
-            this.lblMatricula.TabIndex = 2;
-            this.lblMatricula.Text = "Matricula";
             // 
             // lblNotas
             // 
@@ -452,70 +471,67 @@
             this.lblNumLista.TabIndex = 0;
             this.lblNumLista.Text = "Numero de  lista";
             // 
-            // gbOpciones
+            // txtMatricula
             // 
-            this.gbOpciones.BackColor = System.Drawing.Color.Transparent;
-            this.gbOpciones.Controls.Add(this.btnCancelar);
-            this.gbOpciones.Controls.Add(this.btnRegistrar);
-            this.gbOpciones.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbOpciones.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.gbOpciones.Location = new System.Drawing.Point(13, 13);
-            this.gbOpciones.Name = "gbOpciones";
-            this.gbOpciones.Size = new System.Drawing.Size(147, 149);
-            this.gbOpciones.TabIndex = 1;
-            this.gbOpciones.TabStop = false;
-            this.gbOpciones.Text = "Opciones";
+            this.txtMatricula.Location = new System.Drawing.Point(9, 69);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(123, 22);
+            this.txtMatricula.TabIndex = 13;
+            this.txtMatricula.TextChanged += new System.EventHandler(this.txtMatricula_TextChanged);
             // 
-            // btnCancelar
+            // lblMatricula
             // 
-            this.btnCancelar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancelar.Location = new System.Drawing.Point(22, 75);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(99, 33);
-            this.btnCancelar.TabIndex = 1;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.lblMatricula.AutoSize = true;
+            this.lblMatricula.Location = new System.Drawing.Point(6, 46);
+            this.lblMatricula.Name = "lblMatricula";
+            this.lblMatricula.Size = new System.Drawing.Size(65, 17);
+            this.lblMatricula.TabIndex = 2;
+            this.lblMatricula.Text = "Matricula";
             // 
-            // btnRegistrar
+            // groupBox1
             // 
-            this.btnRegistrar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRegistrar.Location = new System.Drawing.Point(22, 31);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(99, 32);
-            this.btnRegistrar.TabIndex = 0;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = false;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.lblMatricula);
+            this.groupBox1.Controls.Add(this.txtMatricula);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.Location = new System.Drawing.Point(12, 182);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(147, 149);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "busqueda";
             // 
-            // Agregar
+            // Modificar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TeacherHelperWindowsForms.Properties.Resources.mesh_1430108_960_720;
             this.ClientSize = new System.Drawing.Size(750, 536);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbOpciones);
             this.Controls.Add(this.gbAgregar);
+            this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Agregar";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Modificar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alta";
+            this.Text = "Modificar";
+            this.gbOpciones.ResumeLayout(false);
             this.gbAgregar.ResumeLayout(false);
             this.gbAgregar.PerformLayout();
-            this.gbOpciones.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gbAgregar;
         private System.Windows.Forms.GroupBox gbOpciones;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.GroupBox gbAgregar;
         private System.Windows.Forms.ComboBox cbxNumList;
         private System.Windows.Forms.ComboBox cbPromedio;
         private System.Windows.Forms.ComboBox cbCal3;
@@ -540,5 +556,6 @@
         private System.Windows.Forms.Label lblMatricula;
         private System.Windows.Forms.Label lblNotas;
         private System.Windows.Forms.Label lblNumLista;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

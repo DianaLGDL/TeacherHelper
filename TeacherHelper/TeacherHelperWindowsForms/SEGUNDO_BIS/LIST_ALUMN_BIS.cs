@@ -49,7 +49,8 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-
+            Modificar m = new Modificar();
+            m.ShowDialog();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -59,8 +60,6 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
 
         private void btn_return_Click(object sender, EventArgs e)//checar codigo
         {
-            GRUPOS g = new GRUPOS();//checar codigo
-            g.ShowDialog();
             Close();
         }
 

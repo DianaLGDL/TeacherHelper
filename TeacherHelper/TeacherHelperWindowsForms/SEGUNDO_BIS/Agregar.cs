@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region librerias ("BNL")
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+#endregion
 
 namespace TeacherHelperWindowsForms.SEGUNDO_BIS
 {
@@ -18,16 +20,21 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
             InitializeComponent();
         }
 
+        #region groupbox ("BNL")
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
+        #endregion
 
+        #region textbox ("BNL")
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
+        #endregion
 
+        #region botones ("BNL")
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             if (c.registroExistente(Convert.ToInt32(txtMatricula.Text)) == 0)
@@ -41,5 +48,6 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
         {
             Close();
         }
+        #endregion
     }
 }

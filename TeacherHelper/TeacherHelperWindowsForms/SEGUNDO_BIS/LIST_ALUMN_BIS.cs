@@ -66,7 +66,7 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
         #endregion
 

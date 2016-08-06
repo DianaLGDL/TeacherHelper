@@ -154,6 +154,17 @@
             "9",
             "10"});
             this.cbCal3.FormattingEnabled = true;
+            this.cbCal3.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal3.Location = new System.Drawing.Point(25, 281);
             this.cbCal3.Name = "cbCal3";
             this.cbCal3.Size = new System.Drawing.Size(121, 25);
@@ -173,6 +184,17 @@
             "9",
             "10"});
             this.cbCal5.FormattingEnabled = true;
+            this.cbCal5.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal5.Location = new System.Drawing.Point(27, 381);
             this.cbCal5.Name = "cbCal5";
             this.cbCal5.Size = new System.Drawing.Size(121, 25);
@@ -222,6 +244,17 @@
             "9",
             "10"});
             this.cbCal4.FormattingEnabled = true;
+            this.cbCal4.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal4.Location = new System.Drawing.Point(27, 331);
             this.cbCal4.Name = "cbCal4";
             this.cbCal4.Size = new System.Drawing.Size(121, 25);
@@ -241,14 +274,7 @@
             "9",
             "10"});
             this.cbCal2.FormattingEnabled = true;
-            this.cbCal2.Location = new System.Drawing.Point(25, 236);
-            this.cbCal2.Name = "cbCal2";
-            this.cbCal2.Size = new System.Drawing.Size(121, 25);
-            this.cbCal2.TabIndex = 18;
-            // 
-            // cbCal1
-            // 
-            this.cbCal1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cbCal2.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -259,7 +285,25 @@
             "8",
             "9",
             "10"});
+            this.cbCal2.Location = new System.Drawing.Point(25, 236);
+            this.cbCal2.Name = "cbCal2";
+            this.cbCal2.Size = new System.Drawing.Size(121, 25);
+            this.cbCal2.TabIndex = 18;
+            // 
+            // cbCal1
+            // 
             this.cbCal1.FormattingEnabled = true;
+            this.cbCal1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal1.Location = new System.Drawing.Point(27, 189);
             this.cbCal1.Name = "cbCal1";
             this.cbCal1.Size = new System.Drawing.Size(121, 25);

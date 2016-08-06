@@ -41,6 +41,35 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
         {
             c.LISTA_SEGUNDO_BIS(dataGridView1);
         }
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Agregar a = new Agregar();
+            a.ShowDialog();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_return_Click(object sender, EventArgs e)//checar codigo
+        {
+            GRUPOS g = new GRUPOS();//checar codigo
+            g.ShowDialog();
+            Close();
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+
+        }
         #endregion
+
+
     }
 }

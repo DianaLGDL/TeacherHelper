@@ -12,6 +12,7 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
 {
     public partial class Agregar : Form
     {
+        Conexion_Registro c = new Conexion_Registro();
         public Agregar()
         {
             InitializeComponent();
@@ -29,7 +30,21 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            if (c.registroExistente(Convert.ToInt32(txtMatricula.Text)) == 0)
+            {
+                MessageBox.Show(c.registro(Convert.ToInt32(cbxNumList.Text), Convert.ToInt32(txtMatricula.Text), txtNombre.Text, Convert.ToInt32(cbCal1.Text), Convert.ToInt32(cbCal2.Text), Convert.ToInt32(cbCal3.Text), Convert.ToInt32(cbCal4.Text)));
+                txtboxArea.Text = "";
+                txtboxDoctor.Text = "";
+                CbTipCita.Text = "";
+                txtboxRFCregistro.Text = "";
+                txtboxNO_CITA.Text = "";
+                txtHorario.Text = "";
+            }
+        }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

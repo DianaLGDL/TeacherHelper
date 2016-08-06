@@ -44,10 +44,10 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCal2 = new System.Windows.Forms.Label();
             this.lblCal3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtNotas = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.cbCal1 = new System.Windows.Forms.ComboBox();
             this.cbCal2 = new System.Windows.Forms.ComboBox();
             this.cbCal4 = new System.Windows.Forms.ComboBox();
@@ -55,7 +55,7 @@
             this.cbCal5 = new System.Windows.Forms.ComboBox();
             this.cbCal3 = new System.Windows.Forms.ComboBox();
             this.cbPromedio = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.cbxNumList = new System.Windows.Forms.ComboBox();
             this.gbAgregar.SuspendLayout();
             this.gbOpciones.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             // gbAgregar
             // 
             this.gbAgregar.BackColor = System.Drawing.Color.Transparent;
-            this.gbAgregar.Controls.Add(this.comboBox8);
+            this.gbAgregar.Controls.Add(this.cbxNumList);
             this.gbAgregar.Controls.Add(this.cbPromedio);
             this.gbAgregar.Controls.Add(this.cbCal3);
             this.gbAgregar.Controls.Add(this.cbCal5);
@@ -71,10 +71,10 @@
             this.gbAgregar.Controls.Add(this.cbCal4);
             this.gbAgregar.Controls.Add(this.cbCal2);
             this.gbAgregar.Controls.Add(this.cbCal1);
-            this.gbAgregar.Controls.Add(this.textBox5);
-            this.gbAgregar.Controls.Add(this.textBox4);
-            this.gbAgregar.Controls.Add(this.textBox3);
-            this.gbAgregar.Controls.Add(this.textBox2);
+            this.gbAgregar.Controls.Add(this.txtCorreo);
+            this.gbAgregar.Controls.Add(this.txtNotas);
+            this.gbAgregar.Controls.Add(this.txtNombre);
+            this.gbAgregar.Controls.Add(this.txtMatricula);
             this.gbAgregar.Controls.Add(this.lblCal3);
             this.gbAgregar.Controls.Add(this.lblCal2);
             this.gbAgregar.Controls.Add(this.lblNombre);
@@ -131,6 +131,7 @@
             this.btnCancelar.TabIndex = 1;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // lblNumLista
             // 
@@ -242,38 +243,38 @@
             this.lblCal3.TabIndex = 11;
             this.lblCal3.Text = "Calificacion 3";
             // 
-            // textBox2
+            // txtMatricula
             // 
-            this.textBox2.Location = new System.Drawing.Point(25, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 22);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtMatricula.Location = new System.Drawing.Point(25, 100);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(123, 22);
+            this.txtMatricula.TabIndex = 13;
+            this.txtMatricula.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // txtNombre
             // 
-            this.textBox3.Location = new System.Drawing.Point(25, 146);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(202, 22);
-            this.textBox3.TabIndex = 14;
+            this.txtNombre.Location = new System.Drawing.Point(25, 146);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(202, 22);
+            this.txtNombre.TabIndex = 14;
             // 
-            // textBox4
+            // txtNotas
             // 
-            this.textBox4.Location = new System.Drawing.Point(252, 105);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox4.ShortcutsEnabled = false;
-            this.textBox4.Size = new System.Drawing.Size(212, 99);
-            this.textBox4.TabIndex = 15;
-            this.textBox4.TabStop = false;
+            this.txtNotas.Location = new System.Drawing.Point(252, 105);
+            this.txtNotas.Multiline = true;
+            this.txtNotas.Name = "txtNotas";
+            this.txtNotas.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNotas.ShortcutsEnabled = false;
+            this.txtNotas.Size = new System.Drawing.Size(212, 99);
+            this.txtNotas.TabIndex = 15;
+            this.txtNotas.TabStop = false;
             // 
-            // textBox5
+            // txtCorreo
             // 
-            this.textBox5.Location = new System.Drawing.Point(186, 51);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(155, 22);
-            this.textBox5.TabIndex = 16;
+            this.txtCorreo.Location = new System.Drawing.Point(186, 51);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(155, 22);
+            this.txtCorreo.TabIndex = 16;
             // 
             // cbCal1
             // 
@@ -331,13 +332,13 @@
             this.cbPromedio.Size = new System.Drawing.Size(121, 25);
             this.cbPromedio.TabIndex = 23;
             // 
-            // comboBox8
+            // cbxNumList
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(25, 51);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(121, 25);
-            this.comboBox8.TabIndex = 24;
+            this.cbxNumList.FormattingEnabled = true;
+            this.cbxNumList.Location = new System.Drawing.Point(25, 51);
+            this.cbxNumList.Name = "cbxNumList";
+            this.cbxNumList.Size = new System.Drawing.Size(121, 25);
+            this.cbxNumList.TabIndex = 24;
             // 
             // Agregar
             // 
@@ -362,7 +363,7 @@
         private System.Windows.Forms.GroupBox gbOpciones;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cbxNumList;
         private System.Windows.Forms.ComboBox cbPromedio;
         private System.Windows.Forms.ComboBox cbCal3;
         private System.Windows.Forms.ComboBox cbCal5;
@@ -370,10 +371,10 @@
         private System.Windows.Forms.ComboBox cbCal4;
         private System.Windows.Forms.ComboBox cbCal2;
         private System.Windows.Forms.ComboBox cbCal1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.TextBox txtNotas;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtMatricula;
         private System.Windows.Forms.Label lblCal3;
         private System.Windows.Forms.Label lblCal2;
         private System.Windows.Forms.Label lblNombre;

@@ -45,7 +45,10 @@ namespace TeacherHelperWindowsForms
                 MessageBox.Show("Error en los datos");
         }
 
-      
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
     }
 

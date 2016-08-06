@@ -20,7 +20,7 @@ namespace TeacherHelperWindowsForms
         #region form ("BNL")
         private void FormRegistrarse_cs_Load(object sender, EventArgs e)
         {
-
+            btncuenta.Enabled = false;
         }
         #endregion
 
@@ -29,7 +29,8 @@ namespace TeacherHelperWindowsForms
         private void btncuenta_Click(object sender, EventArgs e)
         {
 
-            btncuenta.Enabled = false; 
+            
+
             if (textBox2.Text == textBox5.Text)
             {
                 if (UsuarioDAL.CrearCuentas(textBox1.Text, textBox5.Text, textBox3.Text, textBox4.Text, textBox6.Text ) > 0)
@@ -83,7 +84,7 @@ namespace TeacherHelperWindowsForms
         #region checkbox ("BNL")
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            btncuenta.Enabled = true;
+            btncuenta.Enabled = !btncuenta.Enabled;
         }
         #endregion
 

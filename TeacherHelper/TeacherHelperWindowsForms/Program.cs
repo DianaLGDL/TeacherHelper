@@ -17,7 +17,7 @@ namespace TeacherHelperWindowsForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LIST_ALUMN_BIS());
+            Application.Run(new Form1());
         }
     }
 }

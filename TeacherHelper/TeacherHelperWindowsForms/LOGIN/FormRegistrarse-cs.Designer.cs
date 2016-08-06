@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistrarse_cs));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -138,14 +139,15 @@
             // 
             // btncuenta
             // 
+            this.btncuenta.BackColor = System.Drawing.SystemColors.Highlight;
             this.btncuenta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncuenta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncuenta.Location = new System.Drawing.Point(357, 476);
+            this.btncuenta.Location = new System.Drawing.Point(351, 453);
             this.btncuenta.Name = "btncuenta";
             this.btncuenta.Size = new System.Drawing.Size(159, 32);
             this.btncuenta.TabIndex = 9;
             this.btncuenta.Text = "Crear cuenta";
-            this.btncuenta.UseVisualStyleBackColor = true;
+            this.btncuenta.UseVisualStyleBackColor = false;
             this.btncuenta.Click += new System.EventHandler(this.btncuenta_Click);
             // 
             // checkBox1
@@ -204,14 +206,15 @@
             // 
             // btnRegresar
             // 
+            this.btnRegresar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(186, 476);
+            this.btnRegresar.Location = new System.Drawing.Point(186, 453);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(159, 32);
             this.btnRegresar.TabIndex = 17;
             this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // FormRegistrarse_cs
@@ -220,7 +223,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.BackgroundImage = global::TeacherHelperWindowsForms.Properties.Resources.mesh_1430108_960_720;
-            this.ClientSize = new System.Drawing.Size(750, 561);
+            this.ClientSize = new System.Drawing.Size(750, 536);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
@@ -237,6 +240,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormRegistrarse_cs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrarse";

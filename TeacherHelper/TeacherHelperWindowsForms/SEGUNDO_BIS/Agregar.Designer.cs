@@ -28,34 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agregar));
             this.gbAgregar = new System.Windows.Forms.GroupBox();
-            this.gbOpciones = new System.Windows.Forms.GroupBox();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.lblNumLista = new System.Windows.Forms.Label();
-            this.lblNotas = new System.Windows.Forms.Label();
-            this.lblMatricula = new System.Windows.Forms.Label();
-            this.lblCal1 = new System.Windows.Forms.Label();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.lblPromedio = new System.Windows.Forms.Label();
-            this.lblCal6 = new System.Windows.Forms.Label();
-            this.lblCal5 = new System.Windows.Forms.Label();
-            this.lblCal4 = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblCal2 = new System.Windows.Forms.Label();
-            this.lblCal3 = new System.Windows.Forms.Label();
-            this.txtMatricula = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtNotas = new System.Windows.Forms.TextBox();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.cbCal1 = new System.Windows.Forms.ComboBox();
-            this.cbCal2 = new System.Windows.Forms.ComboBox();
-            this.cbCal4 = new System.Windows.Forms.ComboBox();
-            this.cbCal6 = new System.Windows.Forms.ComboBox();
-            this.cbCal5 = new System.Windows.Forms.ComboBox();
-            this.cbCal3 = new System.Windows.Forms.ComboBox();
-            this.cbPromedio = new System.Windows.Forms.ComboBox();
             this.cbxNumList = new System.Windows.Forms.ComboBox();
+            this.cbPromedio = new System.Windows.Forms.ComboBox();
+            this.cbCal3 = new System.Windows.Forms.ComboBox();
+            this.cbCal5 = new System.Windows.Forms.ComboBox();
+            this.cbCal6 = new System.Windows.Forms.ComboBox();
+            this.cbCal4 = new System.Windows.Forms.ComboBox();
+            this.cbCal2 = new System.Windows.Forms.ComboBox();
+            this.cbCal1 = new System.Windows.Forms.ComboBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtNotas = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.lblCal3 = new System.Windows.Forms.Label();
+            this.lblCal2 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCal4 = new System.Windows.Forms.Label();
+            this.lblCal5 = new System.Windows.Forms.Label();
+            this.lblCal6 = new System.Windows.Forms.Label();
+            this.lblPromedio = new System.Windows.Forms.Label();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lblCal1 = new System.Windows.Forms.Label();
+            this.lblMatricula = new System.Windows.Forms.Label();
+            this.lblNotas = new System.Windows.Forms.Label();
+            this.lblNumLista = new System.Windows.Forms.Label();
+            this.gbOpciones = new System.Windows.Forms.GroupBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.gbAgregar.SuspendLayout();
             this.gbOpciones.SuspendLayout();
             this.SuspendLayout();
@@ -97,188 +98,33 @@
             this.gbAgregar.Text = "Agregar Alumno";
             this.gbAgregar.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // gbOpciones
+            // cbxNumList
             // 
-            this.gbOpciones.BackColor = System.Drawing.Color.Transparent;
-            this.gbOpciones.Controls.Add(this.btnCancelar);
-            this.gbOpciones.Controls.Add(this.btnRegistrar);
-            this.gbOpciones.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbOpciones.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.gbOpciones.Location = new System.Drawing.Point(13, 13);
-            this.gbOpciones.Name = "gbOpciones";
-            this.gbOpciones.Size = new System.Drawing.Size(147, 149);
-            this.gbOpciones.TabIndex = 1;
-            this.gbOpciones.TabStop = false;
-            this.gbOpciones.Text = "Opciones";
+            this.cbxNumList.FormattingEnabled = true;
+            this.cbxNumList.Items.AddRange(new object[] {
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30"});
+            this.cbxNumList.Location = new System.Drawing.Point(25, 51);
+            this.cbxNumList.Name = "cbxNumList";
+            this.cbxNumList.Size = new System.Drawing.Size(121, 25);
+            this.cbxNumList.TabIndex = 24;
             // 
-            // btnRegistrar
+            // cbPromedio
             // 
-            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRegistrar.Location = new System.Drawing.Point(7, 29);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(99, 32);
-            this.btnRegistrar.TabIndex = 0;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancelar.Location = new System.Drawing.Point(7, 72);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(99, 33);
-            this.btnCancelar.TabIndex = 1;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // lblNumLista
-            // 
-            this.lblNumLista.AutoSize = true;
-            this.lblNumLista.Location = new System.Drawing.Point(22, 31);
-            this.lblNumLista.Name = "lblNumLista";
-            this.lblNumLista.Size = new System.Drawing.Size(104, 17);
-            this.lblNumLista.TabIndex = 0;
-            this.lblNumLista.Text = "Numero de  lista";
-            // 
-            // lblNotas
-            // 
-            this.lblNotas.AutoSize = true;
-            this.lblNotas.Location = new System.Drawing.Point(252, 83);
-            this.lblNotas.Name = "lblNotas";
-            this.lblNotas.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblNotas.Size = new System.Drawing.Size(43, 17);
-            this.lblNotas.TabIndex = 1;
-            this.lblNotas.Text = "Notas";
-            this.lblNotas.UseWaitCursor = true;
-            // 
-            // lblMatricula
-            // 
-            this.lblMatricula.AutoSize = true;
-            this.lblMatricula.Location = new System.Drawing.Point(22, 79);
-            this.lblMatricula.Name = "lblMatricula";
-            this.lblMatricula.Size = new System.Drawing.Size(65, 17);
-            this.lblMatricula.TabIndex = 2;
-            this.lblMatricula.Text = "Matricula";
-            // 
-            // lblCal1
-            // 
-            this.lblCal1.AutoSize = true;
-            this.lblCal1.Location = new System.Drawing.Point(24, 170);
-            this.lblCal1.Name = "lblCal1";
-            this.lblCal1.Size = new System.Drawing.Size(90, 17);
-            this.lblCal1.TabIndex = 3;
-            this.lblCal1.Text = "Calificacion 1";
-            // 
-            // lblCorreo
-            // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(189, 31);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(49, 17);
-            this.lblCorreo.TabIndex = 4;
-            this.lblCorreo.Text = "Correo";
-            // 
-            // lblPromedio
-            // 
-            this.lblPromedio.AutoSize = true;
-            this.lblPromedio.Location = new System.Drawing.Point(24, 457);
-            this.lblPromedio.Name = "lblPromedio";
-            this.lblPromedio.Size = new System.Drawing.Size(65, 17);
-            this.lblPromedio.TabIndex = 5;
-            this.lblPromedio.Text = "Promedio";
-            // 
-            // lblCal6
-            // 
-            this.lblCal6.AutoSize = true;
-            this.lblCal6.Location = new System.Drawing.Point(24, 409);
-            this.lblCal6.Name = "lblCal6";
-            this.lblCal6.Size = new System.Drawing.Size(90, 17);
-            this.lblCal6.TabIndex = 6;
-            this.lblCal6.Text = "Calificacion 6";
-            // 
-            // lblCal5
-            // 
-            this.lblCal5.AutoSize = true;
-            this.lblCal5.Location = new System.Drawing.Point(24, 365);
-            this.lblCal5.Name = "lblCal5";
-            this.lblCal5.Size = new System.Drawing.Size(90, 17);
-            this.lblCal5.TabIndex = 7;
-            this.lblCal5.Text = "Calificacion 5";
-            // 
-            // lblCal4
-            // 
-            this.lblCal4.AutoSize = true;
-            this.lblCal4.Location = new System.Drawing.Point(22, 312);
-            this.lblCal4.Name = "lblCal4";
-            this.lblCal4.Size = new System.Drawing.Size(90, 17);
-            this.lblCal4.TabIndex = 8;
-            this.lblCal4.Text = "Calificacion 4";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(22, 123);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 17);
-            this.lblNombre.TabIndex = 9;
-            this.lblNombre.Text = "Nombre";
-            // 
-            // lblCal2
-            // 
-            this.lblCal2.AutoSize = true;
-            this.lblCal2.Location = new System.Drawing.Point(29, 216);
-            this.lblCal2.Name = "lblCal2";
-            this.lblCal2.Size = new System.Drawing.Size(90, 17);
-            this.lblCal2.TabIndex = 10;
-            this.lblCal2.Text = "Calificacion 2";
-            // 
-            // lblCal3
-            // 
-            this.lblCal3.AutoSize = true;
-            this.lblCal3.Location = new System.Drawing.Point(22, 265);
-            this.lblCal3.Name = "lblCal3";
-            this.lblCal3.Size = new System.Drawing.Size(90, 17);
-            this.lblCal3.TabIndex = 11;
-            this.lblCal3.Text = "Calificacion 3";
-            // 
-            // txtMatricula
-            // 
-            this.txtMatricula.Location = new System.Drawing.Point(25, 100);
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(123, 22);
-            this.txtMatricula.TabIndex = 13;
-            this.txtMatricula.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(25, 146);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(202, 22);
-            this.txtNombre.TabIndex = 14;
-            // 
-            // txtNotas
-            // 
-            this.txtNotas.Location = new System.Drawing.Point(252, 105);
-            this.txtNotas.Multiline = true;
-            this.txtNotas.Name = "txtNotas";
-            this.txtNotas.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtNotas.ShortcutsEnabled = false;
-            this.txtNotas.Size = new System.Drawing.Size(212, 99);
-            this.txtNotas.TabIndex = 15;
-            this.txtNotas.TabStop = false;
-            // 
-            // txtCorreo
-            // 
-            this.txtCorreo.Location = new System.Drawing.Point(186, 51);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(155, 22);
-            this.txtCorreo.TabIndex = 16;
-            // 
-            // cbCal1
-            // 
-            this.cbCal1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cbPromedio.FormattingEnabled = true;
+            this.cbPromedio.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -289,15 +135,14 @@
             "8",
             "9",
             "10"});
-            this.cbCal1.FormattingEnabled = true;
-            this.cbCal1.Location = new System.Drawing.Point(27, 189);
-            this.cbCal1.Name = "cbCal1";
-            this.cbCal1.Size = new System.Drawing.Size(121, 25);
-            this.cbCal1.TabIndex = 17;
+            this.cbPromedio.Location = new System.Drawing.Point(25, 475);
+            this.cbPromedio.Name = "cbPromedio";
+            this.cbPromedio.Size = new System.Drawing.Size(121, 25);
+            this.cbPromedio.TabIndex = 23;
             // 
-            // cbCal2
+            // cbCal3
             // 
-            this.cbCal2.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cbCal3.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -308,15 +153,15 @@
             "8",
             "9",
             "10"});
-            this.cbCal2.FormattingEnabled = true;
-            this.cbCal2.Location = new System.Drawing.Point(25, 236);
-            this.cbCal2.Name = "cbCal2";
-            this.cbCal2.Size = new System.Drawing.Size(121, 25);
-            this.cbCal2.TabIndex = 18;
+            this.cbCal3.FormattingEnabled = true;
+            this.cbCal3.Location = new System.Drawing.Point(25, 281);
+            this.cbCal3.Name = "cbCal3";
+            this.cbCal3.Size = new System.Drawing.Size(121, 25);
+            this.cbCal3.TabIndex = 22;
             // 
-            // cbCal4
+            // cbCal5
             // 
-            this.cbCal4.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cbCal5.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -327,11 +172,11 @@
             "8",
             "9",
             "10"});
-            this.cbCal4.FormattingEnabled = true;
-            this.cbCal4.Location = new System.Drawing.Point(27, 331);
-            this.cbCal4.Name = "cbCal4";
-            this.cbCal4.Size = new System.Drawing.Size(121, 25);
-            this.cbCal4.TabIndex = 19;
+            this.cbCal5.FormattingEnabled = true;
+            this.cbCal5.Location = new System.Drawing.Point(27, 381);
+            this.cbCal5.Name = "cbCal5";
+            this.cbCal5.Size = new System.Drawing.Size(121, 25);
+            this.cbCal5.TabIndex = 21;
             // 
             // cbCal6
             // 
@@ -363,9 +208,9 @@
             this.cbCal6.Size = new System.Drawing.Size(121, 25);
             this.cbCal6.TabIndex = 20;
             // 
-            // cbCal5
+            // cbCal4
             // 
-            this.cbCal5.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cbCal4.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -376,15 +221,15 @@
             "8",
             "9",
             "10"});
-            this.cbCal5.FormattingEnabled = true;
-            this.cbCal5.Location = new System.Drawing.Point(27, 381);
-            this.cbCal5.Name = "cbCal5";
-            this.cbCal5.Size = new System.Drawing.Size(121, 25);
-            this.cbCal5.TabIndex = 21;
+            this.cbCal4.FormattingEnabled = true;
+            this.cbCal4.Location = new System.Drawing.Point(27, 331);
+            this.cbCal4.Name = "cbCal4";
+            this.cbCal4.Size = new System.Drawing.Size(121, 25);
+            this.cbCal4.TabIndex = 19;
             // 
-            // cbCal3
+            // cbCal2
             // 
-            this.cbCal3.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cbCal2.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -395,16 +240,15 @@
             "8",
             "9",
             "10"});
-            this.cbCal3.FormattingEnabled = true;
-            this.cbCal3.Location = new System.Drawing.Point(25, 281);
-            this.cbCal3.Name = "cbCal3";
-            this.cbCal3.Size = new System.Drawing.Size(121, 25);
-            this.cbCal3.TabIndex = 22;
+            this.cbCal2.FormattingEnabled = true;
+            this.cbCal2.Location = new System.Drawing.Point(25, 236);
+            this.cbCal2.Name = "cbCal2";
+            this.cbCal2.Size = new System.Drawing.Size(121, 25);
+            this.cbCal2.TabIndex = 18;
             // 
-            // cbPromedio
+            // cbCal1
             // 
-            this.cbPromedio.FormattingEnabled = true;
-            this.cbPromedio.Items.AddRange(new object[] {
+            this.cbCal1.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -415,43 +259,205 @@
             "8",
             "9",
             "10"});
-            this.cbPromedio.Location = new System.Drawing.Point(25, 475);
-            this.cbPromedio.Name = "cbPromedio";
-            this.cbPromedio.Size = new System.Drawing.Size(121, 25);
-            this.cbPromedio.TabIndex = 23;
+            this.cbCal1.FormattingEnabled = true;
+            this.cbCal1.Location = new System.Drawing.Point(27, 189);
+            this.cbCal1.Name = "cbCal1";
+            this.cbCal1.Size = new System.Drawing.Size(121, 25);
+            this.cbCal1.TabIndex = 17;
             // 
-            // cbxNumList
+            // txtCorreo
             // 
-            this.cbxNumList.FormattingEnabled = true;
-            this.cbxNumList.Items.AddRange(new object[] {
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30"});
-            this.cbxNumList.Location = new System.Drawing.Point(25, 51);
-            this.cbxNumList.Name = "cbxNumList";
-            this.cbxNumList.Size = new System.Drawing.Size(121, 25);
-            this.cbxNumList.TabIndex = 24;
+            this.txtCorreo.Location = new System.Drawing.Point(186, 51);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(155, 22);
+            this.txtCorreo.TabIndex = 16;
+            // 
+            // txtNotas
+            // 
+            this.txtNotas.Location = new System.Drawing.Point(252, 105);
+            this.txtNotas.Multiline = true;
+            this.txtNotas.Name = "txtNotas";
+            this.txtNotas.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNotas.ShortcutsEnabled = false;
+            this.txtNotas.Size = new System.Drawing.Size(212, 99);
+            this.txtNotas.TabIndex = 15;
+            this.txtNotas.TabStop = false;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(25, 146);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(202, 22);
+            this.txtNombre.TabIndex = 14;
+            // 
+            // txtMatricula
+            // 
+            this.txtMatricula.Location = new System.Drawing.Point(25, 100);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(123, 22);
+            this.txtMatricula.TabIndex = 13;
+            this.txtMatricula.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // lblCal3
+            // 
+            this.lblCal3.AutoSize = true;
+            this.lblCal3.Location = new System.Drawing.Point(22, 265);
+            this.lblCal3.Name = "lblCal3";
+            this.lblCal3.Size = new System.Drawing.Size(90, 17);
+            this.lblCal3.TabIndex = 11;
+            this.lblCal3.Text = "Calificacion 3";
+            // 
+            // lblCal2
+            // 
+            this.lblCal2.AutoSize = true;
+            this.lblCal2.Location = new System.Drawing.Point(29, 216);
+            this.lblCal2.Name = "lblCal2";
+            this.lblCal2.Size = new System.Drawing.Size(90, 17);
+            this.lblCal2.TabIndex = 10;
+            this.lblCal2.Text = "Calificacion 2";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(22, 123);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(56, 17);
+            this.lblNombre.TabIndex = 9;
+            this.lblNombre.Text = "Nombre";
+            // 
+            // lblCal4
+            // 
+            this.lblCal4.AutoSize = true;
+            this.lblCal4.Location = new System.Drawing.Point(22, 312);
+            this.lblCal4.Name = "lblCal4";
+            this.lblCal4.Size = new System.Drawing.Size(90, 17);
+            this.lblCal4.TabIndex = 8;
+            this.lblCal4.Text = "Calificacion 4";
+            // 
+            // lblCal5
+            // 
+            this.lblCal5.AutoSize = true;
+            this.lblCal5.Location = new System.Drawing.Point(24, 365);
+            this.lblCal5.Name = "lblCal5";
+            this.lblCal5.Size = new System.Drawing.Size(90, 17);
+            this.lblCal5.TabIndex = 7;
+            this.lblCal5.Text = "Calificacion 5";
+            // 
+            // lblCal6
+            // 
+            this.lblCal6.AutoSize = true;
+            this.lblCal6.Location = new System.Drawing.Point(24, 409);
+            this.lblCal6.Name = "lblCal6";
+            this.lblCal6.Size = new System.Drawing.Size(90, 17);
+            this.lblCal6.TabIndex = 6;
+            this.lblCal6.Text = "Calificacion 6";
+            // 
+            // lblPromedio
+            // 
+            this.lblPromedio.AutoSize = true;
+            this.lblPromedio.Location = new System.Drawing.Point(24, 457);
+            this.lblPromedio.Name = "lblPromedio";
+            this.lblPromedio.Size = new System.Drawing.Size(65, 17);
+            this.lblPromedio.TabIndex = 5;
+            this.lblPromedio.Text = "Promedio";
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Location = new System.Drawing.Point(189, 31);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(49, 17);
+            this.lblCorreo.TabIndex = 4;
+            this.lblCorreo.Text = "Correo";
+            // 
+            // lblCal1
+            // 
+            this.lblCal1.AutoSize = true;
+            this.lblCal1.Location = new System.Drawing.Point(24, 170);
+            this.lblCal1.Name = "lblCal1";
+            this.lblCal1.Size = new System.Drawing.Size(90, 17);
+            this.lblCal1.TabIndex = 3;
+            this.lblCal1.Text = "Calificacion 1";
+            // 
+            // lblMatricula
+            // 
+            this.lblMatricula.AutoSize = true;
+            this.lblMatricula.Location = new System.Drawing.Point(22, 79);
+            this.lblMatricula.Name = "lblMatricula";
+            this.lblMatricula.Size = new System.Drawing.Size(65, 17);
+            this.lblMatricula.TabIndex = 2;
+            this.lblMatricula.Text = "Matricula";
+            // 
+            // lblNotas
+            // 
+            this.lblNotas.AutoSize = true;
+            this.lblNotas.Location = new System.Drawing.Point(252, 83);
+            this.lblNotas.Name = "lblNotas";
+            this.lblNotas.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblNotas.Size = new System.Drawing.Size(43, 17);
+            this.lblNotas.TabIndex = 1;
+            this.lblNotas.Text = "Notas";
+            this.lblNotas.UseWaitCursor = true;
+            // 
+            // lblNumLista
+            // 
+            this.lblNumLista.AutoSize = true;
+            this.lblNumLista.Location = new System.Drawing.Point(22, 31);
+            this.lblNumLista.Name = "lblNumLista";
+            this.lblNumLista.Size = new System.Drawing.Size(104, 17);
+            this.lblNumLista.TabIndex = 0;
+            this.lblNumLista.Text = "Numero de  lista";
+            // 
+            // gbOpciones
+            // 
+            this.gbOpciones.BackColor = System.Drawing.Color.Transparent;
+            this.gbOpciones.Controls.Add(this.btnCancelar);
+            this.gbOpciones.Controls.Add(this.btnRegistrar);
+            this.gbOpciones.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbOpciones.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.gbOpciones.Location = new System.Drawing.Point(13, 13);
+            this.gbOpciones.Name = "gbOpciones";
+            this.gbOpciones.Size = new System.Drawing.Size(147, 149);
+            this.gbOpciones.TabIndex = 1;
+            this.gbOpciones.TabStop = false;
+            this.gbOpciones.Text = "Opciones";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCancelar.Location = new System.Drawing.Point(7, 72);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(99, 33);
+            this.btnCancelar.TabIndex = 1;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRegistrar.Location = new System.Drawing.Point(7, 29);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(99, 32);
+            this.btnRegistrar.TabIndex = 0;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // Agregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TeacherHelperWindowsForms.Properties.Resources.mesh_1430108_960_720;
-            this.ClientSize = new System.Drawing.Size(714, 545);
+            this.ClientSize = new System.Drawing.Size(750, 536);
             this.Controls.Add(this.gbOpciones);
             this.Controls.Add(this.gbAgregar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Agregar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta";
             this.gbAgregar.ResumeLayout(false);
             this.gbAgregar.PerformLayout();

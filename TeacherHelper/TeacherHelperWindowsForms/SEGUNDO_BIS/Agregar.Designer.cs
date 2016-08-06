@@ -278,6 +278,17 @@
             // 
             // cbCal1
             // 
+            this.cbCal1.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal1.FormattingEnabled = true;
             this.cbCal1.Location = new System.Drawing.Point(27, 189);
             this.cbCal1.Name = "cbCal1";
@@ -286,6 +297,17 @@
             // 
             // cbCal2
             // 
+            this.cbCal2.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal2.FormattingEnabled = true;
             this.cbCal2.Location = new System.Drawing.Point(25, 236);
             this.cbCal2.Name = "cbCal2";
@@ -294,6 +316,17 @@
             // 
             // cbCal4
             // 
+            this.cbCal4.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal4.FormattingEnabled = true;
             this.cbCal4.Location = new System.Drawing.Point(27, 331);
             this.cbCal4.Name = "cbCal4";
@@ -302,7 +335,29 @@
             // 
             // cbCal6
             // 
+            this.cbCal6.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal6.FormattingEnabled = true;
+            this.cbCal6.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal6.Location = new System.Drawing.Point(27, 433);
             this.cbCal6.Name = "cbCal6";
             this.cbCal6.Size = new System.Drawing.Size(121, 25);
@@ -310,6 +365,17 @@
             // 
             // cbCal5
             // 
+            this.cbCal5.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal5.FormattingEnabled = true;
             this.cbCal5.Location = new System.Drawing.Point(27, 381);
             this.cbCal5.Name = "cbCal5";
@@ -318,6 +384,17 @@
             // 
             // cbCal3
             // 
+            this.cbCal3.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbCal3.FormattingEnabled = true;
             this.cbCal3.Location = new System.Drawing.Point(25, 281);
             this.cbCal3.Name = "cbCal3";
@@ -327,6 +404,17 @@
             // cbPromedio
             // 
             this.cbPromedio.FormattingEnabled = true;
+            this.cbPromedio.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cbPromedio.Location = new System.Drawing.Point(25, 475);
             this.cbPromedio.Name = "cbPromedio";
             this.cbPromedio.Size = new System.Drawing.Size(121, 25);
@@ -335,6 +423,21 @@
             // cbxNumList
             // 
             this.cbxNumList.FormattingEnabled = true;
+            this.cbxNumList.Items.AddRange(new object[] {
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30"});
             this.cbxNumList.Location = new System.Drawing.Point(25, 51);
             this.cbxNumList.Name = "cbxNumList";
             this.cbxNumList.Size = new System.Drawing.Size(121, 25);

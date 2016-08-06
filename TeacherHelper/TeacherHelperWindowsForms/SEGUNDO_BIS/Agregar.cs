@@ -32,13 +32,8 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
         {
             if (c.registroExistente(Convert.ToInt32(txtMatricula.Text)) == 0)
             {
-                MessageBox.Show(c.registro(Convert.ToInt32(cbxNumList.Text), Convert.ToInt32(txtMatricula.Text), txtNombre.Text, Convert.ToInt32(cbCal1.Text), Convert.ToInt32(cbCal2.Text), Convert.ToInt32(cbCal3.Text), Convert.ToInt32(cbCal4.Text)));
-                txtboxArea.Text = "";
-                txtboxDoctor.Text = "";
-                CbTipCita.Text = "";
-                txtboxRFCregistro.Text = "";
-                txtboxNO_CITA.Text = "";
-                txtHorario.Text = "";
+                MessageBox.Show(c.registro(Convert.ToInt32(cbxNumList.Text), Convert.ToInt32(txtMatricula.Text), txtNombre.Text, Convert.ToInt32(cbCal1.Text), Convert.ToInt32(cbCal2.Text), Convert.ToInt32(cbCal3.Text), Convert.ToInt32(cbCal4.Text), Convert.ToInt32(cbCal5.Text),Convert.ToInt32(cbCal6.Text), Convert.ToInt32(cbPromedio.Text),txtCorreo.Text,txtNotas.Text));
+                
             }
         }
 

@@ -64,7 +64,7 @@ namespace TeacherHelperWindowsForms
                 cmd
                 =
                 new
-                SqlCommand("Insert into Segundo_A(NUM_LISTA,MATRICULA,NOMBRE,CAL1,CAL2,CAL3,CAL4,CAL5,CAL6,PROMEDIO,CORREO,NOTAS) values (" +NUM_LISTA+ "," +MATRICULA+ ",'" +NOMBRE+ "'," +CAL1+ "," +PROMEDIO+ ",'" + CORREO + "','" + NOTAS + "',)", cn);
+                SqlCommand("Insert into Segundo_A(NUM_LISTA,MATRICULA,NOMBRE,CAL1,CAL2,CAL3,CAL4,CAL5,CAL6,PROMEDIO,CORREO,NOTAS) values (" +NUM_LISTA+ "," +MATRICULA+ ",'" +NOMBRE+ "'," +CAL1+ "," + CAL2 + "," + CAL3 + "," + CAL4 + "," + CAL5 + "," + CAL6 + "," + PROMEDIO+ ",'" + CORREO + "','" + NOTAS + "')", cn);
                 cmd.ExecuteNonQuery();
 
             }

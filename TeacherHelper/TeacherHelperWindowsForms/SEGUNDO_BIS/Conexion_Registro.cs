@@ -128,7 +128,21 @@ namespace TeacherHelperWindowsForms
         }
         #endregion
 
-        #region ACTUALIZAR
+        #region ACTUALIZAR ("BNL")
+        public string actualizar(int MATRICULA, int NUM_LIST, int NOMBRE, int CAL1, int CAL2, int CAL3, int CAL4, int CAL5, int CAL6, int PROMEDIO, string CORREO, string NOTAS)
+        {
+            string AC = "Se actualizo el registro";
+            try
+            {
+                cmd = new SqlCommand("Update Segundo_A set NUM_LIST = " + NUM_LIST + ", NOMBRE = '" + NOMBRE + "', CAL1 = " + CAL1 + ", CAL2 = " + CAL2 + ", CAL3 = " + CAL3 + ", CAL4 = " + CAL4 + ", CAL5 = " + CAL5 + ", CAL6 = " + CAL6 + ", PROMEDIO = " + PROMEDIO + ", CORREO = '" + CORREO + "', NOTAS = '" + NOTAS + "' WHERE MATRICULA = " + MATRICULA + "", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                AC = "No se pudo actualizar" + ex.ToString();
+            }
+            return AC;
+        }
         #endregion
 
     }

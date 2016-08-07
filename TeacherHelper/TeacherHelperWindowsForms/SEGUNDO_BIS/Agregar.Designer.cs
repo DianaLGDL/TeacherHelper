@@ -57,6 +57,7 @@
             this.gbOpciones = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.gbAgregar.SuspendLayout();
             this.gbOpciones.SuspendLayout();
             this.SuspendLayout();
@@ -455,13 +456,14 @@
             // gbOpciones
             // 
             this.gbOpciones.BackColor = System.Drawing.Color.Transparent;
+            this.gbOpciones.Controls.Add(this.btnLimpiarCampos);
             this.gbOpciones.Controls.Add(this.btnCancelar);
             this.gbOpciones.Controls.Add(this.btnRegistrar);
             this.gbOpciones.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbOpciones.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.gbOpciones.Location = new System.Drawing.Point(13, 13);
             this.gbOpciones.Name = "gbOpciones";
-            this.gbOpciones.Size = new System.Drawing.Size(147, 149);
+            this.gbOpciones.Size = new System.Drawing.Size(147, 168);
             this.gbOpciones.TabIndex = 1;
             this.gbOpciones.TabStop = false;
             this.gbOpciones.Text = "Opciones";
@@ -470,7 +472,7 @@
             // 
             this.btnCancelar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancelar.Location = new System.Drawing.Point(22, 75);
+            this.btnCancelar.Location = new System.Drawing.Point(22, 123);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(99, 33);
             this.btnCancelar.TabIndex = 1;
@@ -489,6 +491,18 @@
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // btnLimpiarCampos
+            // 
+            this.btnLimpiarCampos.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLimpiarCampos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(22, 75);
+            this.btnLimpiarCampos.Name = "btnLimpiarCampos";
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(99, 42);
+            this.btnLimpiarCampos.TabIndex = 2;
+            this.btnLimpiarCampos.Text = "Limpiar Campos";
+            this.btnLimpiarCampos.UseVisualStyleBackColor = false;
+            this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
             // Agregar
             // 
@@ -540,5 +554,6 @@
         private System.Windows.Forms.Label lblMatricula;
         private System.Windows.Forms.Label lblNotas;
         private System.Windows.Forms.Label lblNumLista;
+        private System.Windows.Forms.Button btnLimpiarCampos;
     }
 }

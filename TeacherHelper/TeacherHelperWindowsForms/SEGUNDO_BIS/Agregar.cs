@@ -48,6 +48,22 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
         {
             Close();
         }
+        private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            cbxNumList.Text = "";
+            txtNombre.Text = "";
+            cbCal1.Text = "";
+            cbCal2.Text = "";
+            cbCal3.Text = "";
+            cbCal4.Text = "";
+            cbCal5.Text = "";
+            cbCal6.Text = "";
+            cbPromedio.Text = "";
+            txtNombre.Text = "";
+            txtNotas.Text = "";
+        }
         #endregion
+
+
     }
 }

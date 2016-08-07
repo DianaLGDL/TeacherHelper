@@ -56,7 +56,7 @@ namespace TeacherHelperWindowsForms
         #endregion
 
         #region registro ("BNL")
-        public string registro(int NUM_LISTA, int MATRICULA, string NOMBRE, int CAL1, int CAL2,int CAL3, int CAL4, int CAL5, int CAL6, int PROMEDIO, string CORREO, string NOTAS)
+        public string registro(int NUM_LISTA, int MATRICULA, string NOMBRE, int CAL1, int CAL2,int CAL3, int CAL4, int CAL5, int CAL6, int PROMEDIO, String CORREO, string NOTAS)
         {
             string salida = "Registro correcto";
             try
@@ -129,7 +129,7 @@ namespace TeacherHelperWindowsForms
         #endregion
 
         #region ACTUALIZAR ("BNL")
-        public string actualizar(int MATRICULA, int NUM_LISTA, string NOMBRE, int CAL1, int CAL2, int CAL3, int CAL4, int CAL5, int CAL6, int PROMEDIO, string CORREO, string NOTAS)
+        public string actualizar(int MATRICULA, int NUM_LISTA, string NOMBRE, int CAL1, int CAL2, int CAL3, int CAL4, int CAL5, int CAL6, int PROMEDIO, String CORREO, string NOTAS)
         {
             string AC = "Se actualizo el registro";
             try
@@ -144,6 +144,7 @@ namespace TeacherHelperWindowsForms
             return AC;
         }
         #endregion
+
 
     }
 }

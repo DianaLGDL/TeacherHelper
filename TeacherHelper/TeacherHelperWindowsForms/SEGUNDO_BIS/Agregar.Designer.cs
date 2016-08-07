@@ -55,9 +55,9 @@
             this.lblNotas = new System.Windows.Forms.Label();
             this.lblNumLista = new System.Windows.Forms.Label();
             this.gbOpciones = new System.Windows.Forms.GroupBox();
+            this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.gbAgregar.SuspendLayout();
             this.gbOpciones.SuspendLayout();
             this.SuspendLayout();
@@ -468,6 +468,18 @@
             this.gbOpciones.TabStop = false;
             this.gbOpciones.Text = "Opciones";
             // 
+            // btnLimpiarCampos
+            // 
+            this.btnLimpiarCampos.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLimpiarCampos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(22, 75);
+            this.btnLimpiarCampos.Name = "btnLimpiarCampos";
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(99, 42);
+            this.btnLimpiarCampos.TabIndex = 2;
+            this.btnLimpiarCampos.Text = "Limpiar Campos";
+            this.btnLimpiarCampos.UseVisualStyleBackColor = false;
+            this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
+            // 
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.SystemColors.Highlight;
@@ -491,18 +503,6 @@
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
-            // btnLimpiarCampos
-            // 
-            this.btnLimpiarCampos.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnLimpiarCampos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(22, 75);
-            this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(99, 42);
-            this.btnLimpiarCampos.TabIndex = 2;
-            this.btnLimpiarCampos.Text = "Limpiar Campos";
-            this.btnLimpiarCampos.UseVisualStyleBackColor = false;
-            this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
             // Agregar
             // 

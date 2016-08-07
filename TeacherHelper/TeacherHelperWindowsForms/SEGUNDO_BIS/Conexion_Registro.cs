@@ -14,6 +14,7 @@ namespace TeacherHelperWindowsForms
 {
     class Conexion_Registro
     {
+
         #region comandos sql ("BNL")
         SqlConnection cn;
         SqlCommand cmd;
@@ -144,7 +145,46 @@ namespace TeacherHelperWindowsForms
             return AC;
         }
         #endregion
+        
+        #region MOSTRAR ALUMNO ("BNL") 
+        public void MostrarAlumno(int MATRICULA, TextBox txtNombre, TextBox txtNumList )
+        {
+            try
+            {
+                cmd = new SqlCommand("Select * from Segundo_A where MATRICULA=" + MATRICULA + "", cn);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    txtNombre.Text = dr["NOMBRE"].ToString();
+                    Convert.ToInt32(txtNumList.Text = dr["NUM_LISTA"].ToString());
+                    
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudieron llenar los campos");
+            }
+        }
+        #endregion
 
+        #region Borrar Alumno ("BNL")
+        public string BorrarAlumno(int MATRICULA)
+        {
+            string AC = "Se borro alumno";
+            try
+            {
+                cmd = new SqlCommand("delete from Segundo_A WHERE MATRICULA = " + MATRICULA + "", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                AC = "No se pudo borrar" + ex.ToString();
+            }
+            return AC;
+        }
+        #endregion
 
     }
+
 }

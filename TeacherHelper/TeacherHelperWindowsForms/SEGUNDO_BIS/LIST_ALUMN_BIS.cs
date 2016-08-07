@@ -55,7 +55,8 @@ namespace TeacherHelperWindowsForms.SEGUNDO_BIS
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            Eliminar el = new Eliminar();
+            el.ShowDialog();
         }
 
         private void btn_return_Click(object sender, EventArgs e)//checar codigo

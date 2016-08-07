@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gbOpciones = new System.Windows.Forms.GroupBox();
+            this.btnBorrarCampos = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.gbAgregar = new System.Windows.Forms.GroupBox();
@@ -57,7 +58,6 @@
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.lblMatricula = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnBorrarCampos = new System.Windows.Forms.Button();
             this.gbOpciones.SuspendLayout();
             this.gbAgregar.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -77,6 +77,18 @@
             this.gbOpciones.TabIndex = 3;
             this.gbOpciones.TabStop = false;
             this.gbOpciones.Text = "Opciones";
+            // 
+            // btnBorrarCampos
+            // 
+            this.btnBorrarCampos.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnBorrarCampos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBorrarCampos.Location = new System.Drawing.Point(22, 75);
+            this.btnBorrarCampos.Name = "btnBorrarCampos";
+            this.btnBorrarCampos.Size = new System.Drawing.Size(99, 43);
+            this.btnBorrarCampos.TabIndex = 2;
+            this.btnBorrarCampos.Text = "Limpiar Campos";
+            this.btnBorrarCampos.UseVisualStyleBackColor = false;
+            this.btnBorrarCampos.Click += new System.EventHandler(this.btnBorrarCampos_Click);
             // 
             // btnCancelar
             // 
@@ -484,11 +496,11 @@
             // lblMatricula
             // 
             this.lblMatricula.AutoSize = true;
-            this.lblMatricula.Location = new System.Drawing.Point(6, 46);
+            this.lblMatricula.Location = new System.Drawing.Point(6, 32);
             this.lblMatricula.Name = "lblMatricula";
-            this.lblMatricula.Size = new System.Drawing.Size(65, 17);
+            this.lblMatricula.Size = new System.Drawing.Size(111, 34);
             this.lblMatricula.TabIndex = 2;
-            this.lblMatricula.Text = "Matricula";
+            this.lblMatricula.Text = "Ingrese matricula\r\na buscar\r\n";
             // 
             // groupBox1
             // 
@@ -503,18 +515,6 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "busqueda";
-            // 
-            // btnBorrarCampos
-            // 
-            this.btnBorrarCampos.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnBorrarCampos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBorrarCampos.Location = new System.Drawing.Point(22, 75);
-            this.btnBorrarCampos.Name = "btnBorrarCampos";
-            this.btnBorrarCampos.Size = new System.Drawing.Size(99, 43);
-            this.btnBorrarCampos.TabIndex = 2;
-            this.btnBorrarCampos.Text = "Limpiar Campos";
-            this.btnBorrarCampos.UseVisualStyleBackColor = false;
-            this.btnBorrarCampos.Click += new System.EventHandler(this.btnBorrarCampos_Click);
             // 
             // Modificar
             // 

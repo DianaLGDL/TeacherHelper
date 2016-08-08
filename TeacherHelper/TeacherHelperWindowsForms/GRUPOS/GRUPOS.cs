@@ -37,7 +37,7 @@ namespace TeacherHelperWindowsForms
         #region botones ("BNL")
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Rb_2Bis.Enabled)
+            if (Rb_2Bis.Checked)
             {
                 LIST_ALUMN_BIS BIS = new LIST_ALUMN_BIS();
                 BIS.ShowDialog();

@@ -69,11 +69,14 @@
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtContraseña.Location = new System.Drawing.Point(139, 165);
             this.txtContraseña.Multiline = true;
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(154, 25);
             this.txtContraseña.TabIndex = 3;
+            this.txtContraseña.WordWrap = false;
             // 
             // txtUsuario
             // 
@@ -99,7 +102,7 @@
             // btnEntrar
             // 
             this.btnEntrar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEntrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.Location = new System.Drawing.Point(270, 438);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(84, 39);
@@ -110,8 +113,8 @@
             // 
             // btnRegistrarse
             // 
-            this.btnRegistrarse.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRegistrarse.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarse.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnRegistrarse.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarse.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnRegistrarse.Location = new System.Drawing.Point(383, 438);
             this.btnRegistrarse.Name = "btnRegistrarse";

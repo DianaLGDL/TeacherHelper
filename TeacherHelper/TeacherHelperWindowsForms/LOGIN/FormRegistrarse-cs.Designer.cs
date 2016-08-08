@@ -83,6 +83,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(148, 112);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(197, 20);
             this.textBox2.TabIndex = 3;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -141,7 +142,7 @@
             // 
             this.btncuenta.BackColor = System.Drawing.SystemColors.Highlight;
             this.btncuenta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncuenta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncuenta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncuenta.Location = new System.Drawing.Point(351, 453);
             this.btncuenta.Name = "btncuenta";
             this.btncuenta.Size = new System.Drawing.Size(159, 32);
@@ -154,11 +155,11 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkBox1.Location = new System.Drawing.Point(34, 395);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(296, 25);
+            this.checkBox1.Size = new System.Drawing.Size(251, 21);
             this.checkBox1.TabIndex = 10;
             this.checkBox1.Text = "Acepto los terminos y condiciones.";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -200,6 +201,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(148, 154);
             this.textBox5.Name = "textBox5";
+            this.textBox5.PasswordChar = '*';
             this.textBox5.Size = new System.Drawing.Size(197, 20);
             this.textBox5.TabIndex = 16;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
@@ -208,7 +210,7 @@
             // 
             this.btnRegresar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.Location = new System.Drawing.Point(186, 453);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(159, 32);

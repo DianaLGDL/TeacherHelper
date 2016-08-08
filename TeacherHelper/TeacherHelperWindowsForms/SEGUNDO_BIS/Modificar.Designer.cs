@@ -152,6 +152,22 @@
             // 
             this.cbxNumList.FormattingEnabled = true;
             this.cbxNumList.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
             "17",
             "18",
             "19",
@@ -175,6 +191,7 @@
             // 
             this.cbPromedio.FormattingEnabled = true;
             this.cbPromedio.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -205,6 +222,7 @@
             "10"});
             this.cbCal3.FormattingEnabled = true;
             this.cbCal3.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -235,6 +253,7 @@
             "10"});
             this.cbCal5.FormattingEnabled = true;
             this.cbCal5.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -265,6 +284,7 @@
             "10"});
             this.cbCal6.FormattingEnabled = true;
             this.cbCal6.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -295,6 +315,7 @@
             "10"});
             this.cbCal4.FormattingEnabled = true;
             this.cbCal4.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -325,6 +346,7 @@
             "10"});
             this.cbCal2.FormattingEnabled = true;
             this.cbCal2.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -344,6 +366,7 @@
             // 
             this.cbCal1.FormattingEnabled = true;
             this.cbCal1.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",

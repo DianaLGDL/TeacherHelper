@@ -36,6 +36,7 @@ namespace TeacherHelperWindowsForms
 
         private void btnEntrar_Click_1(object sender, EventArgs e)
         {
+                  
             if (UsuarioDAL.Autentificar(txtUsuario.Text, txtContraseña.Text) > 0)
             {
                 GRUPOS g = new GRUPOS();
@@ -43,12 +44,18 @@ namespace TeacherHelperWindowsForms
             }
             else
                 MessageBox.Show("Error en los datos");
+          
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+      
+    }
     }
     }
 

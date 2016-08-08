@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region librerias
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+#endregion
 
 namespace TeacherHelperWindowsForms
 {
@@ -28,20 +30,22 @@ namespace TeacherHelperWindowsForms
 
         private void btncuenta_Click(object sender, EventArgs e)
         {
-
             
-
-            if (textBox2.Text == textBox5.Text)
-            {
-                if (UsuarioDAL.CrearCuentas(textBox1.Text, textBox5.Text, textBox3.Text, textBox4.Text, textBox6.Text ) > 0)
+                if (textBox2.Text == textBox5.Text)
                 {
-                    MessageBox.Show("cuenta creada con exito");
+                    if (UsuarioDAL.CrearCuentas(textBox1.Text, textBox5.Text, textBox3.Text, textBox4.Text, textBox6.Text) > 0)
+                    {
+                        MessageBox.Show("cuenta creada con exito");
+
+                    }
 
                 }
+                else MessageBox.Show("No se creo la cuenta");
 
             }
-            else MessageBox.Show("No se creo la cuenta");
-        }
+
+        
+        
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             Form1 f = new Form1();
